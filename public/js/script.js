@@ -117,7 +117,7 @@ window.addEventListener('load', () => {
         sec.classList.remove('opacity-0', 'translate-y-5');
       }, 150 * i);
     });
-  }, 600);
+  }, 3000);
 });
 
 // Disable scroll while loading
