@@ -92,41 +92,68 @@ document.addEventListener("contextmenu", function (e) {
   }
 });
 
-
 // Loading screen
 
-window.addEventListener('load', () => {
-  const loader = document.getElementById('loader');
-  const page = document.getElementById('about');
+// window.addEventListener('load', () => {
+//   const loader = document.getElementById('loader');
+//   const page = document.getElementById('about');
 
-  // Step 1: Fade out loader
-  loader.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+//   // Step 1: Fade out loader
+//   loader.classList.add('opacity-0', 'transition-opacity', 'duration-500');
 
-  // Step 2: After fade-out, hide loader completely and reveal main page
-  setTimeout(() => {
-    loader.style.display = 'none';
+//   // Step 2: After fade-out, hide loader completely and reveal main page
+//   setTimeout(() => {
+//     loader.style.display = 'none';
 
-    // Reveal page
-    page.classList.remove('opacity-0', 'translate-y-5');
+//     // Reveal page
+//     page.classList.remove('opacity-0', 'translate-y-5');
 
-    // Animate each section with a stagger
-    const sections = document.querySelectorAll('.fade-section');
-    sections.forEach((sec, i) => {
+//     // Animate each section with a stagger
+//     const sections = document.querySelectorAll('.fade-section');
+//     sections.forEach((sec, i) => {
+//       setTimeout(() => {
+//         sec.classList.add('opacity-100', 'translate-y-0');
+//         sec.classList.remove('opacity-0', 'translate-y-5');
+//       }, 150 * i);
+//     });
+//   }, 3000);
+// });
+
+// // Disable scroll while loading
+// document.body.style.overflow = 'hidden';
+
+// window.addEventListener('load', () => {
+//   // Hide loader
+//   document.getElementById('loader').style.display = 'none';
+
+//   // Re-enable scroll
+//   document.body.style.overflow = 'auto';
+// });
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const hero = document.getElementById("hero");
+
+  // Set minimum loader display time (e.g., 3 seconds)
+  const minDisplayTime = 3000;
+  const startTime = performance.now();
+
+  const hideLoader = () => {
+    const elapsed = performance.now() - startTime;
+    const remainingTime = Math.max(0, minDisplayTime - elapsed);
+
+    setTimeout(() => {
+      loader.classList.add("opacity-0", "transition-opacity", "duration-700");
       setTimeout(() => {
-        sec.classList.add('opacity-100', 'translate-y-0');
-        sec.classList.remove('opacity-0', 'translate-y-5');
-      }, 150 * i);
-    });
-  }, 3000);
-});
+        loader.style.display = "none";
+        document.body.classList.remove("overflow-hidden");
 
-// Disable scroll while loading
-document.body.style.overflow = 'hidden';
+        // Show hero animation
+        hero.classList.remove("opacity-0", "translate-y-6");
+        hero.classList.add("opacity-100", "translate-y-0");
+      }, 700); // wait for fade-out
+    }, remainingTime);
+  };
 
-window.addEventListener('load', () => {
-  // Hide loader
-  document.getElementById('loader').style.display = 'none';
-  
-  // Re-enable scroll
-  document.body.style.overflow = 'auto';
+  hideLoader();
 });
