@@ -135,7 +135,7 @@ window.addEventListener("load", () => {
   const hero = document.getElementById("about");
 
   // Set minimum loader display time (e.g., 3 seconds)
-  const minDisplayTime = 3000;
+  const minDisplayTime = 2000;
   const startTime = performance.now();
 
   const hideLoader = () => {

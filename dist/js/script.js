@@ -132,10 +132,10 @@ document.addEventListener("contextmenu", function (e) {
 
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
-  const hero = document.getElementById("hero");
+  const hero = document.getElementById("about");
 
   // Set minimum loader display time (e.g., 3 seconds)
-  const minDisplayTime = 3000;
+  const minDisplayTime = 2000;
   const startTime = performance.now();
 
   const hideLoader = () => {
