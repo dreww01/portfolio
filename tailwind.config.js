@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./index.html", "./src/**/*.{js,html}"],
   darkMode: "class",
   theme: {
@@ -99,10 +100,19 @@ module.exports = {
           "0%, 100%": { boxShadow: "0 0 8px rgba(58,154,217,0.3)" },
           "50%": { boxShadow: "0 0 16px rgba(58,154,217,0.6)" },
         },
+        spin: {
+          to: { transform: "rotate(360deg)" },
+        },
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
+
       animation: {
         glowLight: "glowLight 4s ease-in-out infinite",
         glowDark: "glowDark 4s ease-in-out infinite",
+        "fade-in-up": "fade-in-up 0.6s ease-out both",
       },
     },
   },

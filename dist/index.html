@@ -9,13 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
 </head>
 
-<body class="bg-stone-100 dark:bg-slate-950">
+<body class=" relative bg-stone-100 dark:bg-slate-950 overflow-x-hidden">
+
+    <!-- Loader -->
+    <div id="loader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white dark:bg-slate-950">
+        <div class=" rounded-full animate-spin">
+            <svg height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path style="fill:#2D50A7;"
+                        d="M116.364,221.091H23.273C10.42,221.091,0,231.511,0,244.364c0,12.853,10.42,23.273,23.273,23.273 h93.091c12.853,0,23.273-10.42,23.273-23.273C139.636,231.511,129.216,221.091,116.364,221.091z">
+                    </path>
+                    <path style="fill:#73A1FB;"
+                        d="M488.727,221.091h-93.091c-12.853,0-23.273,10.42-23.273,23.273c0,12.853,10.42,23.273,23.273,23.273 h93.091c12.853,0,23.273-10.42,23.273-23.273C512,231.511,501.58,221.091,488.727,221.091z">
+                    </path>
+                    <path style="fill:#355EC9;"
+                        d="M140.805,326.645L74.98,392.471c-9.089,9.089-9.089,23.823,0,32.912 c4.544,4.544,10.501,6.816,16.457,6.816s11.913-2.273,16.455-6.816l65.825-65.826c9.089-9.089,9.089-23.824,0-32.912 S149.892,317.556,140.805,326.645z">
+                    </path>
+                    <g>
+                        <path style="fill:#C4D9FD;"
+                            d="M256,11.636c-12.853,0-23.273,10.42-23.273,23.273v46.545c0,12.853,10.42,23.273,23.273,23.273 c12.853,0,23.273-10.42,23.273-23.273V34.909C279.273,22.056,268.853,11.636,256,11.636z">
+                        </path>
+                        <path style="fill:#C4D9FD;"
+                            d="M404.105,63.344L338.28,129.17c-9.089,9.089-9.089,23.824,0,32.912 c4.544,4.544,10.501,6.817,16.457,6.817s11.913-2.273,16.455-6.817l65.825-65.826c9.089-9.089,9.089-23.824,0-32.912 C427.93,54.255,413.192,54.255,404.105,63.344z">
+                        </path>
+                    </g>
+                    <path style="fill:#3D6DEB;"
+                        d="M256,360.727c-12.853,0-23.273,10.42-23.273,23.273v93.091c0,12.853,10.42,23.273,23.273,23.273 c12.853,0,23.273-10.42,23.273-23.273V384C279.273,371.147,268.853,360.727,256,360.727z">
+                    </path>
+                    <path style="fill:#5286FA;"
+                        d="M371.192,326.645c-9.086-9.089-23.824-9.089-32.912,0c-9.089,9.087-9.089,23.824,0,32.912 l65.825,65.826c4.544,4.544,10.501,6.816,16.457,6.816c5.955,0,11.913-2.273,16.455-6.816c9.089-9.089,9.089-23.824,0-32.912 L371.192,326.645z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- HEADER -->
     <header id="header"
         class="fixed top-4 left-1/2 -translate-x-1/2 w-[88%] sm:w-[85%] md:w-[80%] lg:w-[75%] bg-white/30 dark:bg-slate-800/30 backdrop-blur-xl border border-white/20 rounded-3xl z-50 transition-all duration-300 animate-glowLight dark:animate-glowDark">
-        <!-- Header -->
-        <!-- <header id="header"
-        class="fixed top-0 w-full z-50 transition-all duration-300 bg-white dark:bg-slate-950 backdrop-blur rounded-b-3xl"> -->
-
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <a href="#about">
@@ -75,7 +109,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="about" class="pt-32 pb-20 px-6">
+    <section id="about"
+        class="pt-32 pb-20 px-6 transform fade-section opacity-0 translate-y-5 transition-all duration-500 ease-out">
+
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6 animate-fade-in">
                 <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -133,6 +169,7 @@
                         </svg>
                     </a>
                 </div>
+
             </div>
 
             <div class="relative animate-slide-in">
@@ -169,7 +206,7 @@
 
     <!-- Tech stack Section -->
     <section id="skills"
-        class="py-20 px-6 bg-gradient-to-br from-primary-50 to-orange-50 dark:from-gray-800 dark:to-gray-850  animate-fade-in">
+        class="py-20 px-6 bg-gradient-to-br from-primary-50 to-orange-50 dark:from-gray-800 dark:to-gray-850 animate-fade-in">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -497,7 +534,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6">
+    <section id="projects" class="py-20 px-6  animate-fade-in">
         <div class="max-w-7xl mx-auto">
             <div class="flex items-start justify-between mb-16">
                 <div>
@@ -700,7 +737,7 @@
     </section>
 
     <!-- Skills/Tools Section -->
-    <section id="tools" class="py-20 px-6 bg-blue-100 dark:bg-blue-950/30">
+    <section id="tools" class="py-20 px-6 bg-blue-100 dark:bg-blue-950/30  animate-fade-in">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -1058,7 +1095,7 @@
     </section> -->
 
     <!-- Why Work With Me Section -->
-    <section class="py-20 px-6 bg-stone-200 dark:bg-gray-800">
+    <section class="py-20 px-6 bg-stone-200 dark:bg-gray-800  animate-fade-in">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8">
                 Why Work With Me
@@ -1075,7 +1112,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6">
+    <section id="contact" class="py-20 px-6  animate-fade-in">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8">
                 Let's Build Something Great
