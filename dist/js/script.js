@@ -94,48 +94,12 @@ document.addEventListener("contextmenu", function (e) {
 
 // Loading screen
 
-// window.addEventListener('load', () => {
-//   const loader = document.getElementById('loader');
-//   const page = document.getElementById('about');
-
-//   // Step 1: Fade out loader
-//   loader.classList.add('opacity-0', 'transition-opacity', 'duration-500');
-
-//   // Step 2: After fade-out, hide loader completely and reveal main page
-//   setTimeout(() => {
-//     loader.style.display = 'none';
-
-//     // Reveal page
-//     page.classList.remove('opacity-0', 'translate-y-5');
-
-//     // Animate each section with a stagger
-//     const sections = document.querySelectorAll('.fade-section');
-//     sections.forEach((sec, i) => {
-//       setTimeout(() => {
-//         sec.classList.add('opacity-100', 'translate-y-0');
-//         sec.classList.remove('opacity-0', 'translate-y-5');
-//       }, 150 * i);
-//     });
-//   }, 3000);
-// });
-
-// // Disable scroll while loading
-// document.body.style.overflow = 'hidden';
-
-// window.addEventListener('load', () => {
-//   // Hide loader
-//   document.getElementById('loader').style.display = 'none';
-
-//   // Re-enable scroll
-//   document.body.style.overflow = 'auto';
-// });
-
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   const hero = document.getElementById("about");
 
   // Set minimum loader display time (e.g., 3 seconds)
-  const minDisplayTime = 2000;
+  const minDisplayTime = 1500;
   const startTime = performance.now();
 
   const hideLoader = () => {
@@ -156,4 +120,10 @@ window.addEventListener("load", () => {
   };
 
   hideLoader();
+  document
+    .querySelector("#about")
+    .classList.remove("opacity-0", "translate-y-5");
+  document
+    .querySelector("#about")
+    .classList.add("opacity-100", "translate-y-0");
 });
