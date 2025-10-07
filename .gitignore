@@ -58,3 +58,5 @@ coverage/
 
 # unwanted folder
 my-tests/
+section-test.html
+test.html

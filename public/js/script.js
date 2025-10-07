@@ -127,3 +127,33 @@ window.addEventListener("load", () => {
     .querySelector("#about")
     .classList.add("opacity-100", "translate-y-0");
 });
+
+// Auto-scroll reviews
+let autoScrollInterval = setInterval(() => {
+  if (
+    reviewsContainer.scrollLeft >=
+    reviewsContainer.scrollWidth - reviewsContainer.clientWidth
+  ) {
+    reviewsContainer.scrollTo({ left: 0, behavior: "smooth" });
+  } else {
+    reviewsContainer.scrollBy({ left: 320, behavior: "smooth" });
+  }
+}, 4000);
+
+// Pause auto-scroll on hover
+reviewsContainer.addEventListener("mouseenter", () => {
+  clearInterval(autoScrollInterval);
+});
+
+reviewsContainer.addEventListener("mouseleave", () => {
+  autoScrollInterval = setInterval(() => {
+    if (
+      reviewsContainer.scrollLeft >=
+      reviewsContainer.scrollWidth - reviewsContainer.clientWidth
+    ) {
+      reviewsContainer.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      reviewsContainer.scrollBy({ left: 320, behavior: "smooth" });
+    }
+  }, 4000);
+});
