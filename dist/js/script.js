@@ -129,31 +129,45 @@ window.addEventListener("load", () => {
 });
 
 // Auto-scroll reviews
-let autoScrollInterval = setInterval(() => {
-  if (
-    reviewsContainer.scrollLeft >=
-    reviewsContainer.scrollWidth - reviewsContainer.clientWidth
-  ) {
-    reviewsContainer.scrollTo({ left: 0, behavior: "smooth" });
-  } else {
-    reviewsContainer.scrollBy({ left: 320, behavior: "smooth" });
-  }
-}, 4000);
-
-// Pause auto-scroll on hover
-reviewsContainer.addEventListener("mouseenter", () => {
-  clearInterval(autoScrollInterval);
-});
-
-reviewsContainer.addEventListener("mouseleave", () => {
-  autoScrollInterval = setInterval(() => {
-    if (
-      reviewsContainer.scrollLeft >=
-      reviewsContainer.scrollWidth - reviewsContainer.clientWidth
-    ) {
-      reviewsContainer.scrollTo({ left: 0, behavior: "smooth" });
-    } else {
-      reviewsContainer.scrollBy({ left: 320, behavior: "smooth" });
+// Auto-scroll reviews (guarded)
+const reviewsContainer = document.getElementById("reviewsContainer");
+if (reviewsContainer) {
+  let autoScrollInterval = setInterval(() => {
+    try {
+      if (
+        reviewsContainer.scrollLeft >=
+        reviewsContainer.scrollWidth - reviewsContainer.clientWidth
+      ) {
+        reviewsContainer.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        reviewsContainer.scrollBy({ left: 320, behavior: "smooth" });
+      }
+    } catch (err) {
+      console.warn("Auto-scroll error:", err);
     }
   }, 4000);
-});
+
+  // Pause auto-scroll on hover
+  reviewsContainer.addEventListener("mouseenter", () => {
+    clearInterval(autoScrollInterval);
+  });
+
+  reviewsContainer.addEventListener("mouseleave", () => {
+    autoScrollInterval = setInterval(() => {
+      try {
+        if (
+          reviewsContainer.scrollLeft >=
+          reviewsContainer.scrollWidth - reviewsContainer.clientWidth
+        ) {
+          reviewsContainer.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          reviewsContainer.scrollBy({ left: 320, behavior: "smooth" });
+        }
+      } catch (err) {
+        console.warn("Auto-scroll error:", err);
+      }
+    }, 4000);
+  });
+} else {
+  console.warn("reviewsContainer element not found - skipping auto-scroll");
+}
