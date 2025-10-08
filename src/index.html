@@ -203,327 +203,438 @@
 
     <!-- Tech stack Section -->
     <section id="skills"
-        class="py-20 px-6 bg-gradient-to-br from-primary-50 to-orange-50 dark:from-gray-800 dark:to-gray-850 animate-fade-in">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                    My Stack
-                </h2>
-                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Mastering the full stack with precision and continuous learning
+        class="py-8 w-full lg:py-16 md:px-8 xl:px-20 text-gray-900  bg-blue-100 dark:bg-blue-950/30 animate-fade-in">
+
+        <div class="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
+            <!-- Left Side -->
+            <div class="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
+                <div class="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
+                    <!-- Vertical Text -->
+                    <div
+                        class="absolute -left-4 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2 text-gray-950 dark:text-white">
+                        <div class="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-gray-900 dark:bg-white mt-2 mx-auto "></div>
+                        <p>All Stacks</p>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h2 class="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight text-gray-950 dark:text-white">
+                        Explore My Expertise & Tech Stack
+                    </h2>
+                </div>
+
+                <p class="p-3 text-gray-400 text-sm leading-relaxed">
+                    These are the tools and technologies that I use daily to develop responsive
+                    applications. With a strong foundation in frontend, I focus on delivering clean,
+                    maintainable code and intuitive user experiences.
                 </p>
+
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                <!-- TODO: Put the svg in a div, so it will be easier to edit when needed -->
-                <!-- ADD MORE SKILLS -->
-
-                <!-- Python -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="0 0 20 20"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title>python [#127]</title>
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-                                    <!-- to the svg colour-->
-                                    <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7599.000000)"
-                                        fill="currentColor">
-                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+            <!-- Right Side (Static Icons Grid) -->
+            <div class="w-full md:w-1/2 flex justify-center items-center text-gray-900 dark:text-gray-50">
+                <div class="grid grid-cols-3 md:grid-cols-4 gap-4">
+                    <!-- Static Icons -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg width="32px" height="32px" viewBox="0 -0.5 256 256" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <defs>
+                                            <linearGradient x1="12.9593594%" y1="12.0393928%" x2="79.6388325%"
+                                                y2="78.2008538%" id="linearGradient-1">
+                                                <stop stop-color="#387EB8" offset="0%"> </stop>
+                                                <stop stop-color="#366994" offset="100%"> </stop>
+                                            </linearGradient>
+                                            <linearGradient x1="19.127525%" y1="20.5791813%" x2="90.7415328%"
+                                                y2="88.4290372%" id="linearGradient-2">
+                                                <stop stop-color="#FFE052" offset="0%"> </stop>
+                                                <stop stop-color="#FFC331" offset="100%"> </stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <g>
                                             <path
-                                                d="M296.744,7457.45798 C296.262,7457.45798 295.872,7457.06594 295.872,7456.58142 C295.872,7456.0969 296.262,7455.70587 296.744,7455.70587 C297.226,7455.70587 297.616,7456.0969 297.616,7456.58142 C297.616,7457.06594 297.226,7457.45798 296.744,7457.45798 M294.072,7459 C299.15,7459 298.833,7456.78649 298.833,7456.78649 L298.827,7454.49357 L293.982,7454.49357 L293.982,7453.80499 L300.751,7453.80499 C300.751,7453.80499 304,7454.17591 304,7449.02614 C304,7443.87636 301.165,7444.0583 301.165,7444.0583 L299.472,7444.0583 L299.472,7446.44873 C299.472,7446.44873 299.563,7449.29855 296.682,7449.29855 L291.876,7449.29855 C291.876,7449.29855 289.176,7449.25533 289.176,7451.9222 L289.176,7456.33112 C289.176,7456.33112 288.766,7459 294.072,7459 M291.257,7440.54202 C291.739,7440.54202 292.128,7440.93406 292.128,7441.41858 C292.128,7441.9031 291.739,7442.29413 291.257,7442.29413 C290.775,7442.29413 290.385,7441.9031 290.385,7441.41858 C290.385,7440.93406 290.775,7440.54202 291.257,7440.54202 M293.928,7439 C288.851,7439 289.168,7441.21351 289.168,7441.21351 L289.174,7443.50643 L294.019,7443.50643 L294.019,7444.19501 L287.249,7444.19501 C287.249,7444.19501 284,7443.82409 284,7448.97386 C284,7454.12364 286.836,7453.9417 286.836,7453.9417 L288.528,7453.9417 L288.528,7451.55127 C288.528,7451.55127 288.437,7448.70145 291.319,7448.70145 L296.124,7448.70145 C296.124,7448.70145 298.824,7448.74467 298.824,7446.0778 L298.824,7441.66888 C298.824,7441.66888 299.234,7439 293.928,7439"
-                                                id="python-[#127]"></path>
+                                                d="M126.915866,0.0722755491 C62.0835831,0.0722801733 66.1321288,28.1874648 66.1321288,28.1874648 L66.2044043,57.3145115 L128.072276,57.3145115 L128.072276,66.0598532 L41.6307171,66.0598532 C41.6307171,66.0598532 0.144551098,61.3549438 0.144551098,126.771315 C0.144546474,192.187673 36.3546019,189.867871 36.3546019,189.867871 L57.9649915,189.867871 L57.9649915,159.51214 C57.9649915,159.51214 56.8001363,123.302089 93.5968379,123.302089 L154.95878,123.302089 C154.95878,123.302089 189.434218,123.859386 189.434218,89.9830604 L189.434218,33.9695088 C189.434218,33.9695041 194.668541,0.0722755491 126.915866,0.0722755491 L126.915866,0.0722755491 L126.915866,0.0722755491 Z M92.8018069,19.6589497 C98.9572068,19.6589452 103.932242,24.6339846 103.932242,30.7893845 C103.932246,36.9447844 98.9572068,41.9198193 92.8018069,41.9198193 C86.646407,41.9198239 81.6713721,36.9447844 81.6713721,30.7893845 C81.6713674,24.6339846 86.646407,19.6589497 92.8018069,19.6589497 L92.8018069,19.6589497 L92.8018069,19.6589497 Z"
+                                                fill="url(#linearGradient-1)"> </path>
+                                            <path
+                                                d="M128.757101,254.126271 C193.589403,254.126271 189.540839,226.011081 189.540839,226.011081 L189.468564,196.884035 L127.600692,196.884035 L127.600692,188.138693 L214.042251,188.138693 C214.042251,188.138693 255.528417,192.843589 255.528417,127.427208 C255.52844,62.0108566 219.318366,64.3306589 219.318366,64.3306589 L197.707976,64.3306589 L197.707976,94.6863832 C197.707976,94.6863832 198.87285,130.896434 162.07613,130.896434 L100.714182,130.896434 C100.714182,130.896434 66.238745,130.339138 66.238745,164.215486 L66.238745,220.229038 C66.238745,220.229038 61.0044225,254.126271 128.757101,254.126271 L128.757101,254.126271 L128.757101,254.126271 Z M162.87116,234.539597 C156.715759,234.539597 151.740726,229.564564 151.740726,223.409162 C151.740726,217.253759 156.715759,212.278727 162.87116,212.278727 C169.026563,212.278727 174.001595,217.253759 174.001595,223.409162 C174.001618,229.564564 169.026563,234.539597 162.87116,234.539597 L162.87116,234.539597 L162.87116,234.539597 Z"
+                                                fill="url(#linearGradient-2)"> </path>
                                         </g>
                                     </g>
-                                </g>
-                            </g>
-                        </svg>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">Python</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        Python
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 95%"></div>
-                    </div>
-                </div>
-                <!-- Django -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-                            enable-background="new 0 0 512 512" xml:space="preserve">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g id="5151e0c8492e5103c096af88a51f62ed">
-                                    <path display="inline"
-                                        d="M321.38,0.5h-83.553v127.405c-12.483-3.253-22.786-4.338-36.354-4.338 c-87.349,0-143.781,55.34-143.781,140.52c0,88.441,53.176,134.556,155.181,134.556c34.165,0,65.639-3.254,108.508-11.392V0.5z M237.827,329.203c-11.938,1.623-19.533,2.162-28.755,2.162c-42.865,0-66.197-24.409-66.197-68.904 c0-45.573,24.413-71.616,66.743-71.616c10.303,0,18.437,1.084,28.209,4.338V329.203z M454.309,0.949v85.726h-83.557V0.949H454.309z M370.752,129.532h83.557v193.699c0,66.735-4.889,98.743-19.537,126.417c-13.56,26.59-31.466,43.403-68.365,61.852l-77.589-36.896 c36.889-17.359,54.81-32.542,66.197-55.883c11.934-23.874,15.737-51.544,15.737-124.252V129.532z">
-                                    </path>
-                                </g>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">90%</span> -->
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        Django
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 50%"></div>
-                    </div>
-                </div>
 
-                <!-- FastAPI -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="0 0 24 24" role="img"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12 6.626 0 12-5.373 12-12 0-6.625-5.373-12-12-12zm-.624 21.62v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z">
-                                </path>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">88%</span> -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <rect width="256" height="256" fill="#242938" rx="60" />
+                                        <path fill="url(#skillIconsTailwindcssDark0)" fill-rule="evenodd"
+                                            d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5"
+                                            clip-rule="evenodd" />
+                                        <defs>
+                                            <linearGradient id="skillIconsTailwindcssDark0" x1="86.5" x2="163.5" y1="74"
+                                                y2="185.5" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#32B1C1" />
+                                                <stop offset="1" stop-color="#14C6B7" />
+                                            </linearGradient>
+                                        </defs>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">TailwindCSS</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        FastAPI
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
 
-                <!-- React -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 15 15">
-                            <g fill="none" stroke="currentColor" stroke-width="1">
-                                <path d="M14.5 7.584c0 1.657-3.134 3-7 3s-7-1.343-7-3 3.134-3 7-3 7 1.343 7 3Z"></path>
-                                <path
-                                    d="M4.166 13.739c1.457.79 4.13-1.327 5.972-4.726 1.841-3.4 2.153-6.795.696-7.584-1.457-.79-4.13 1.327-5.972 4.726-1.841 3.4-2.153 6.795-.696 7.584Z">
-                                </path>
-                                <path
-                                    d="M10.834 13.739c-1.457.79-4.13-1.327-5.972-4.726-1.841-3.4-2.153-6.795-.696-7.584 1.457-.79 4.13 1.327 5.972 4.726 1.841 3.4 2.153 6.795.696 7.584Z">
-                                </path>
-                                <path d="M6.5 7.584a1 1 0 1 0 2 0 1 1 0 0 0-2 0Z"></path>
-                            </g>
-                        </svg>
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <rect width="256" height="256" fill="#F0DB4F" rx="60" />
+                                        <path fill="#323330"
+                                            d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">JavaScript</p>
+                        </div>
+                    </div>
 
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">92%</span> -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                    viewBox="0 0 256 256"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE -->
+                                    <g fill="none">
+                                        <rect width="256" height="256" fill="#E14E1D" rx="60" />
+                                        <path fill="#fff"
+                                            d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z" />
+                                        <path fill="#EBEBEB"
+                                            d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">HTML5</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        React
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 40%"></div>
-                    </div>
-                </div>
 
-                <!-- MongoDB -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" fill="#000000" viewBox="0 0 32 32" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title>mongodb</title>
-                                <path
-                                    d="M15.821 23.185s0-10.361 0.344-10.36c0.266 0 0.612 13.365 0.612 13.365-0.476-0.056-0.956-2.199-0.956-3.005zM22.489 12.945c-0.919-4.016-2.932-7.469-5.708-10.134l-0.007-0.006c-0.338-0.516-0.647-1.108-0.895-1.732l-0.024-0.068c0.001 0.020 0.001 0.044 0.001 0.068 0 0.565-0.253 1.070-0.652 1.409l-0.003 0.002c-3.574 3.034-5.848 7.505-5.923 12.508l-0 0.013c-0.001 0.062-0.001 0.135-0.001 0.208 0 4.957 2.385 9.357 6.070 12.115l0.039 0.028 0.087 0.063q0.241 1.784 0.412 3.576h0.601c0.166-1.491 0.39-2.796 0.683-4.076l-0.046 0.239c0.396-0.275 0.742-0.56 1.065-0.869l-0.003 0.003c2.801-2.597 4.549-6.297 4.549-10.404 0-0.061-0-0.121-0.001-0.182l0 0.009c-0.003-0.981-0.092-1.94-0.261-2.871l0.015 0.099z">
-                                </path>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">85%</span> -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#CCCCCC" stroke-width="0.32"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z"
+                                            fill="#EE513B"></path>
+                                        <path
+                                            d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z"
+                                            fill="white"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">Git</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        MongoDB
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
 
-                <!-- PostgreSQL -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" fill="#000000" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g id="3e91140ac1bfb9903b91c1b0ca09020a">
-                                    <path display="inline"
-                                        d="M400.264,168.995c1.028-6.661,1.993-13.04,2.114-20.066c-16.78-2.065-36.036-1.596-43.639,9.272 c-14.791,21.138,14.097,72.94,26.432,95.061c3.17,5.683,5.461,9.789,6.514,12.347c1.166,2.831,2.44,5.385,3.755,7.728 c8.487-18.056,6.297-36.352,4.163-54.124c-1.057-8.799-2.154-17.898-1.867-26.649C398.021,183.57,399.163,176.16,400.264,168.995z M386.131,164.883c-1.363,1.436-4.243,3.927-8.172,4.472c-0.505,0.07-1.021,0.106-1.533,0.106c-5.792,0-10.79-4.52-11.205-7.45 c-0.476-3.535,5.292-6.224,11.245-7.053c1.303-0.181,2.598-0.273,3.84-0.273c5.144,0,8.552,1.526,8.895,3.98 C389.422,160.252,388.22,162.692,386.131,164.883z M327.039,33.711c10.601-2.196,25.097-4.245,41.328-3.889 c41.125,0.91,73.651,16.294,96.683,45.725c17.667,22.573-1.782,125.291-58.099,213.903c-0.553-0.706-1.121-1.42-1.706-2.15 c-0.233-0.294-0.472-0.593-0.714-0.895c14.553-24.032,11.705-47.806,9.173-68.887c-1.041-8.652-2.021-16.824-1.771-24.498 c0.259-8.14,1.335-15.115,2.376-21.863c1.278-8.313,2.581-16.915,2.219-27.055c0.27-1.063,0.379-2.319,0.237-3.812 c-0.915-9.728-12.02-38.829-34.651-65.174C369.738,60.709,351.685,44.587,327.039,33.711z M171.328,292.222 c1.615,1.686,3.301,3.267,5.044,4.759c-6.948,7.438-22.048,23.891-38.119,43.224c-11.372,13.674-19.226,11.06-21.809,10.196 c-16.828-5.614-36.354-41.182-53.569-97.587c-14.896-48.802-23.603-97.875-24.29-111.638c-2.176-43.52,8.373-73.852,31.356-90.151 c37.4-26.526,98.897-10.648,123.607-2.595c-0.357,0.349-0.725,0.677-1.075,1.032c-40.549,40.952-39.587,110.918-39.486,115.193 c-0.006,1.649,0.133,3.984,0.323,7.199c0.697,11.766,1.996,33.668-1.473,58.473C148.615,253.376,155.718,275.934,171.328,292.222z M397.933,301.079c-8.035,2.319-22.459,7.667-21.144,34.405c-1.057,13.407-8.6,76.218-12.428,98.418 c-5.054,29.324-15.848,40.246-46.18,46.749c-31.457,6.743-42.586-9.31-49.927-27.654c-4.735-11.847-7.059-65.254-5.413-124.232 c0.024-0.782-0.089-1.541-0.307-2.251c-0.186-1.375-0.476-2.767-0.879-4.17c-2.452-8.584-8.438-15.759-15.617-18.736 c-2.247-0.932-5.644-2.335-9.822-2.335c-1.543,0-3.062,0.193-4.558,0.581c1.343-5.526,3.669-11.762,6.189-18.519l1.059-2.843 c1.19-3.207,2.687-6.526,4.268-10.044c8.545-18.981,20.248-44.984,7.547-103.724c-4.758-22.001-20.647-32.744-44.728-30.25 c-14.44,1.495-27.647,7.321-34.236,10.661c-1.422,0.72-2.727,1.417-3.941,2.095c1.817-22.136,8.735-63.497,34.751-89.773 c16.366-16.531,38.163-24.695,64.748-24.256c52.314,0.859,85.861,27.706,104.795,50.078c16.315,19.28,25.148,38.699,28.674,49.173 c-26.504-2.696-44.546,2.539-53.686,15.607c-19.89,28.429,10.878,83.603,25.665,110.121c2.71,4.862,5.054,9.058,5.788,10.845 c4.812,11.669,11.048,19.461,15.605,25.148C395.549,297.917,396.9,299.61,397.933,301.079z M248.003,326.252 c0.581,2.037,1.238,5.901-0.907,8.902c-10.808,15.134-25.686,22.81-44.22,22.81c-6.095,0-12.566-0.848-19.24-2.518 c-3.904-0.976-7.415-2.67-9.477-4.073c1.721-0.812,4.784-1.912,10.096-3.005c25.71-5.297,29.679-9.031,38.349-20.039 c1.989-2.524,4.244-5.385,7.367-8.874c2.358-2.638,4.46-3.977,6.246-3.977c1.253,0,2.666,0.54,4.383,1.25 C243.724,318.027,246.769,321.94,248.003,326.252z M469.358,317.431c0.108-0.024,0.218-0.049,0.322-0.068 c-3.937,3.683-10.669,8.619-20.224,13.057c-8.213,3.812-21.951,6.671-35.007,7.284c-14.42,0.67-21.761-1.613-23.487-3.025 c-0.807-16.658,5.396-18.4,11.959-20.244c1.028-0.29,2.037-0.572,3.005-0.911c0.605,0.488,1.267,0.979,1.993,1.456 C419.508,322.63,440.18,323.453,469.358,317.431z M224.536,278.37l1.055-2.823c1.357-3.658,2.948-7.188,4.633-10.931 c8.163-18.14,18.326-40.719,6.614-94.891c-2.265-10.464-7.708-16.544-16.642-18.591c-19.575-4.485-47.027,10.223-52.95,15.475 c0.055,1.186,0.144,2.69,0.244,4.404c0.728,12.258,2.081,35.077-1.583,61.281c-2.616,18.712,3.098,36.972,15.676,50.093 c9.895,10.325,22.902,16.037,36.275,16.077C219.396,292.156,221.874,285.518,224.536,278.37z M206.106,168.942 c-0.917-1.216-2.411-3.575-2.109-5.707c0.428-3.124,4.188-4.998,10.058-4.998c1.301,0,2.648,0.097,4.008,0.287 c6.336,0.881,12.875,3.882,12.245,8.386c-0.474,3.412-5.877,8.472-12.366,8.472c-0.567,0-1.14-0.04-1.698-0.119 C212.492,174.745,208.7,172.381,206.106,168.942z M503.183,308.227c-2.113-9.584-10.793-20.777-28.299-20.777 c-3.513,0-7.32,0.432-11.641,1.327c-8.301,1.71-15.706,2.775-22.071,3.171c22.293-38.223,40.23-81.256,50.633-121.528 c9.628-37.277,16.912-87.071-3.054-112.586C459.399,20.326,416.475,0.501,364.616,0.501c-29.228,0-53.098,6.53-60.326,8.74 c-11.398-1.988-23.668-3.102-36.482-3.31c-0.855-0.014-1.702-0.02-2.546-0.02c-23.059,0-43.723,5.237-61.434,15.567 c-16.13-5.401-47.269-14.147-79.702-14.147c-36.481,0-65.214,10.757-85.396,31.976C16.385,62.799,6.212,97.864,8.497,143.529 c0.956,19.149,11.989,76.369,27.785,126.056c24.404,76.774,51.286,112.527,84.595,112.527c10.429,0,20.326-3.65,29.448-10.854 c7.999,8.717,19.609,12.653,25.994,14.251c9.058,2.267,17.989,3.416,26.547,3.416c11.437,0,22.208-1.997,32.061-5.941 c0.064,2.142,0.123,4.171,0.173,6.002c0.117,4.162,0.23,8.244,0.384,12.061c1.04,25.951,2.815,46.143,8.089,60.381 c0.278,0.747,0.649,1.888,1.053,3.122c2.305,7.067,5.788,17.739,13.801,27.428c10.563,12.771,25.616,19.522,43.525,19.522 c5.72,0,11.847-0.689,18.215-2.057c19.248-4.122,41.114-10.423,57.019-33.067c14.911-21.232,22.144-53,23.454-103.008l0.577-4.921 l2.775,0.227c1.758,0.08,3.577,0.116,5.408,0.116c18.672,0,39.363-4.005,52.723-10.208 C473.222,353.426,508.999,334.565,503.183,308.227z M455.442,343.302c-11.487,5.332-29.791,8.704-45.659,8.704 c-7.611,0-14.649-0.782-20.119-2.484c-2.59,23.806-8.096,68.198-11.302,86.801c-6.002,34.785-21.503,50.564-57.204,58.22 c-6.078,1.299-11.604,1.88-16.622,1.884c-34.212,0.004-45.038-27.077-49.469-38.153c-5.413-13.536-7.294-57.953-6.913-103.031 c-12.282,11.116-27.68,16.929-45.278,16.929c-7.256,0-14.888-0.988-22.685-2.94c-2.255-0.565-22.035-5.873-21.771-18.519 c0.239-11.572,16.753-14.977,22.969-16.259c21.854-4.502,23.266-6.292,30.056-14.912c1.373-1.746,2.986-3.787,4.953-6.119 c-0.022-0.258-0.051-0.512-0.066-0.77c-9.8-0.263-19.379-2.876-28.1-7.556c-5.899,6.28-21.91,23.564-39.055,44.191 c-10.323,12.411-20.244,16.058-28.337,16.058c-3.3,0.004-6.295-0.604-8.893-1.473c-22.182-7.396-43.266-43.368-62.66-106.91 c-14.736-48.277-24.072-98.686-24.891-115.076c-2.437-48.707,10.132-83.181,37.356-102.47 c48.744-34.534,127.507-8.015,144.689-1.577c16.941-11.55,37.393-17.215,61.105-16.842c12.92,0.212,24.782,1.874,35.665,4.58 c5.171-2.269,31.844-10.338,63.378-9.991c45.897,0.488,83.813,18.193,109.647,51.204c17.433,22.279,5.93,76.516,0.169,98.799 c-11.971,46.351-34.163,96.026-61.14,137.128c4.082,3.001,16.518,7.962,51.218,0.798c11.688-2.412,18.724-0.282,20.909,6.325 C491.615,322.609,468.342,337.315,455.442,343.302z">
-                                    </path>
-                                </g>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">87%</span> -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg fill="#000000" width="32px" height="32px" viewBox="0 0 24 24" role="img"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12 6.626 0 12-5.373 12-12 0-6.625-5.373-12-12-12zm-.624 21.62v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">FastAPI</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        PostgreSQL
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
 
-                <!-- Docker -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="0 0 32 32"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M6.427 23.031c-0.911 0-1.739-0.744-1.739-1.651s0.744-1.656 1.739-1.656c1 0 1.751 0.745 1.751 1.656 0 0.907-0.833 1.651-1.745 1.651zM27.776 14.016c-0.183-1.323-1-2.401-2.079-3.224l-0.421-0.333-0.339 0.411c-0.656 0.745-0.921 2.068-0.839 3.057 0.079 0.751 0.317 1.495 0.74 2.073-0.344 0.177-0.76 0.333-1.084 0.505-0.76 0.249-1.5 0.333-2.239 0.333h-21.385l-0.084 0.489c-0.156 1.579 0.084 3.229 0.751 4.724l0.328 0.579v0.077c2 3.313 5.557 4.803 9.437 4.803 7.459 0 13.573-3.224 16.473-10.177 1.901 0.083 3.819-0.412 4.719-2.235l0.24-0.411-0.396-0.251c-1.083-0.661-2.563-0.749-3.801-0.416l-0.027 0.005zM17.099 12.693h-3.239v3.228h3.239zM17.099 8.636h-3.239v3.228h3.239zM17.099 4.495h-3.239v3.229h3.239zM21.057 12.693h-3.219v3.228h3.229v-3.228zM9.063 12.693h-3.219v3.228h3.229v-3.228zM13.099 12.693h-3.197v3.228h3.219v-3.228zM5.063 12.693h-3.199v3.228h3.24v-3.228zM13.099 8.636h-3.197v3.228h3.219v-3.224zM9.041 8.636h-3.192v3.228h3.219v-3.224l-0.021-0.004z">
-                                </path>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">83%</span> -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Django Project" role="img"
+                                    viewBox="0 0 512 512" width="32px" height="32px" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <rect width="512" height="512" rx="15%" fill="#113228"></rect>
+                                        <path fill="#ffffff"
+                                            d="M227 101h56v257c-29 5-50 8-73 8-69 0-104-31-104-90 0-57 37-93 96-93 9 0 16 0 25 2zm0 129c-7-2-12-3-19-3-29 0-45 18-45 48s15 46 44 46c6 0 11 0 20-2zm145-44v129c0 45-3 66-13 84-9 18-21 29-46 42l-52-25c25-11 37-22 44-37 8-16 11-34 11-83V186zm-56-85h56v57h-56z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">Django</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        Docker
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 60%"></div>
-                    </div>
-                </div>
 
-                <!-- Git -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.4142 3.82843C12.6332 3.04738 11.3668 3.04738 10.5858 3.82843L9.91421 4.5L11.482 6.06774C11.6472 6.02356 11.8208 6 12 6C13.1046 6 14 6.89543 14 8C14 8.17916 13.9764 8.35282 13.9323 8.51804L15.982 10.5677C16.1472 10.5236 16.3208 10.5 16.5 10.5C17.6046 10.5 18.5 11.3954 18.5 12.5C18.5 13.6046 17.6046 14.5 16.5 14.5C15.3954 14.5 14.5 13.6046 14.5 12.5C14.5 12.3208 14.5236 12.1472 14.5677 11.982L13 10.4142V15.2676C13.5978 15.6134 14 16.2597 14 17C14 18.1046 13.1046 19 12 19C10.8954 19 10 18.1046 10 17C10 16.2597 10.4022 15.6134 11 15.2676V9.73244C10.4022 9.38663 10 8.74028 10 8C10 7.82084 10.0236 7.64718 10.0677 7.48196L8.5 5.91421L3.82843 10.5858C3.04738 11.3668 3.04738 12.6332 3.82843 13.4142L10.5858 20.1716C11.3668 20.9526 12.6332 20.9526 13.4142 20.1716L20.1716 13.4142C20.9526 12.6332 20.9526 11.3668 20.1716 10.5858L13.4142 3.82843ZM9.17157 2.41421C10.7337 0.852115 13.2663 0.852119 14.8284 2.41422L21.5858 9.17157C23.1479 10.7337 23.1479 13.2663 21.5858 14.8284L14.8284 21.5858C13.2663 23.1479 10.7337 23.1479 9.17157 21.5858L2.41421 14.8284C0.852115 13.2663 0.852119 10.7337 2.41422 9.17157L9.17157 2.41421Z"
-                                    fill="currentColor"></path>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">90%</span> -->
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title>flask</title>
+                                        <path
+                                            d="M14.319 9.028c0.35-0.62-1.443-0.835-0.235-0.219 0.112 0.037 0.087 0.262 0.235 0.219zM4.542 3.761c-0.762-0.995 1.432 0.167 0.659-0.875-0.652-0.519-1.278 0.585-0.659 0.875zM6.138 5.011c1.082-0.144-0.275-0.466-0.217-0.013zM5.283 4.806c0.232-0.315-0.407 0.16 0 0zM7.008 6.705c0.672 0.016-0.289-0.902 0.511-0.487-0.131-0.429-0.932-0.509-1.325-0.68-0.22 0.392 0.45 1.172 0.812 1.167zM4.916 6.619c0.575-0.434 1.984 0.257 1.080-0.431-0.087-0.077-1.982 0.522-1.080 0.431zM4.326 7.747c1.007-0.342 2.383-0.726 2.858 0.169-0.484-0.582-0.195-1.155 0.262-0.304 0.645 0.861 0.968-0.391 0.547-0.681 0.479 0.595 1.023 0.875 0.321 0.037 0.762-0.917-1.528 0.121-2.049 0.11-0.25 0.112-2.588 0.596-1.938 0.669zM6.2 10.881c0.246-0.304-0.337-0.081 0 0zM5.613 12.452c-0.060-0.362-0.175 0.192 0 0zM5.116 12.2c0.562-0.037 0.882-0.621-0.109-0.587-1.537-0.159 1.355 0.525-0.197 0.33-0.209 0.137 0.295 0.296 0.306 0.259zM29.116 27.445c0.696 0 2.109-0.216 0.594-0.216-0.237 0.038-1.386 0.030-0.595 0.216zM25.78 25.486c0.075-0.51-0.337 0.046 0 0zM28.395 27.273c0.015-0.444-0.38 0.2 0 0zM2.65 11.165c0.499-0.381-0.589-0.145 0 0zM4.549 12.515c0.306-0.325-0.663-0.132 0 0zM3.906 12.335c0.871-0.534-0.926-0.462 0 0zM10.348 8.28c0.291-0.765 1.132-0.306 0.135-0.154 0.021 0.081-0.030 0.395-0.135 0.154zM9.548 8.285c-0.069-1.517 1.398 0.54-0 0zM6.736 8.718c0.462-0.555 2.618-0.354 1.040-0.054-0.422-0.319-0.747 0.187-1.040 0.054zM6.541 8.848c0.277-0.325 0.080 0.287-0 0zM5.782 9.154c0.040-0.514 1.272 0.272 0.204 0.185zM5.226 9.144c0.437-0.325 0.232 0.182-0 0zM5.167 9.687c0.304-1.117 1.625 0.918 0.497 0.147-0.121-0.095-0.275-0.152-0.443-0.152-0.019 0-0.038 0.001-0.057 0.002l0.002-0zM2.050 11.274c-0.116-0.669-0.1-1.842 1.015-1.445-1.488 0.295 1.030 1.849 0.712 0.622 0.625 0.030 1.225-0.37 0.895 0.237 1.233-0.137 2.087-1.205 3.279-1.056 1.082-0.090 2.082-0.299 3.033-0.615l-0.091 0.026c0.822-0.060 1.612-0.945 1.162-1.468-0.218-0.013-0.473-0.021-0.73-0.021-0.993 0-1.96 0.114-2.888 0.329l0.086-0.017c-1.372 0.285-2.619 0.827-4.005 1.061-1.35 0.181 0.271 0.5-0.115 0.57-0.705 0.245 0.84 0.41-0.091 0.667-0.575-0.11-1.175-0.307-0.928-0.912-1.293 0.166-2.431 0.704-1.408 2.019h0.075zM4.22 12.726c0.069-0.475-0.512 0.094-0 0zM26.941 27.412c0.165-0.49-0.417 0.062 0 0zM24.474 26.133c0.412-0.379-0.525-0.117 0 0zM4.062 13.526c0.647-0.254-1.175-0.525-0.13-0.050zM2.538 12.615c-0.044-0.4-0.237 0.050 0 0zM2.263 12.823c-0.025-0.337-0.18 0.127 0 0zM4.12 14.028c-0.087-0.731-1.050-0.11 0-0zM7.719 16.687c0.152-0.14-0.362-0.104 0 0zM4.463 14.6c-0.15-0.121-0.117 0.152 0 0zM3.946 14.347c0.011-0.312-0.829-0.28 0 0zM3.041 14.119c-0.172-0.968-0.656-0.147-0 0zM6.836 16.754c0.011-0.509-0.396-0.019 0 0zM23.985 27.436c0.64-0.13 2.097 0.325 2.332-0.17-0.775-0.019-2.687-0.547-2.777 0.125l0.17 0.029zM6.378 16.639c-0.009-0.166-0.152 0.062 0 0zM4.933 15.939c0.499-0.169-0.459-0.112 0 0zM16.467 23.725c-0.009-0.501-0.494 0.125 0 0zM5.241 16.65c0.775-0.3-0.83-0.212 0 0zM20.249 26.297c0.27-0.2-0.337-0.025 0 0zM17.435 24.523c-0.050-0.194-0.196 0.037 0 0zM17.093 24.274c-0.135-0.347-0.535-0.008 0 0zM9.994 19.796c0-0.506-0.906-0.205 0 0zM9.174 19.606c-0.332-0.279-0.016-0.040 0 0zM3.771 16.275c0.115-0.479-1.066-2.633-0.557-1.080 0.182 0.325 0.162 0.942 0.557 1.080zM6.715 18.599c0.646 0.145 2.582 1.592 1.44 0.1-0.585-0.172-0.234-1.603-0.831-1.35 0.4 0.669 0.33 0.953-0.512 0.532-1.056-0.516-0.592 0.255-0.387 0.467-0.28 0.065 0.374 0.245 0.291 0.25zM22.891 29.012c0.482-0.322-0.586-0.104 0 0zM21.166 27.865c0.717-0.602-0.759 0.266-0 0zM21.503 28.028c0.881-0.637-0.535-0.122-0.185 0.12zM11.639 22.174c-0.181-0.371-0.28 0.059 0 0zM11.064 21.841c-0.025-0.3-0.364 0.025 0 0zM20.399 27.727c0.689-0.444-0.157-0.375-0.125 0.040zM6.272 18.818c0.204-0.302-0.525-0.039 0 0zM20.625 28.018c0.712-0.61-0.45-0.128 0-0zM19.543 27.593c1.418-0.917-0.582-0.4 0-0zM4.51 18.178c-0.657-0.937-0.409-1.36-1.043-2.124-0.12-0.587-1.087-1.916-0.5-0.507 0.537 0.823 0.697 2.098 1.543 2.632zM19.784 27.853c0.771-0.817-0.747 0.049 0 0zM19.783 28.115c0.004-0.187-0.3 0.082-0 0zM18.333 27.121c0.697-0.585-0.675 0.26-0 0zM11.964 23.185c0.452 0.4 2.077 0.295 0.55 0.050-0.227-0.337-1.438-0.255-0.55-0.050zM7.327 20.39c-0.302-0.502-1.080-0.455 0 0zM6.513 19.855c-0.125-0.491-0.875-0.487 0-0zM18.624 27.462c0.406-0.394 0.016 0.629 0.675-0.096 0.006-0.519-0.021-0.825-0.757-0.195-0.202 0.112-0.292 0.591 0.082 0.291zM17.861 27.141c0.025-0.35-0.241 0.3 0-0zM10.438 22.644c1.762 0.567-0.864-0.695 0-0zM8.988 21.811c0.425 0.316 1.6 0.898 0.605 0.12 0.336-0.39-0.642-0.597-0.317-0.857-0.825-0.505-0.65-0.46-0.072-0.445-0.992-0.442 0.142-0.41 0.087-0.637-0.381-0.075-1.899-0.675-1.005 0.050-0.907-0.462-0.216 0.172-0.49 0.105-0.928-0.252 0.825 0.706-0.147 0.469 0.531 0.421 1.432 1.080 0.225 0.446-0.16 0.229 0.862 0.575 1.115 0.75zM11.726 23.628c0.769 0.2 0.765-0.119 0.069-0.212-0.375-0.35-1.557-0.719-0.5-0.044 0.071 0.177 0.294 0.174 0.43 0.257zM10.339 22.928c-0.16-0.139 0.020 0.087-0-0zM11.013 9.666c0.117-0.144 0.025 0.174-0-0zM10.61 12.069c-0.27-0.475 0.34-2.091 0.407-1.087-0.284 0.781-0.081 1.218 0.116 0.17 0.366-0.825-0.079 1.628-0.525 0.918zM10.218 12.706c-0.066-0.4 0.225 0.505 0 0zM10.459 13.343c-0.393-0.97 0.365 0.512-0-0zM10.623 13.706c-0.003-0.209 0.054 0.302-0-0zM7.795 12.132c0.257-0.542 0.475 0.604-0-0zM6.793 11.535c0.161-0.069 0.085 0.215-0-0zM11.076 14.879c0.146-1.18 0.129 0.691-0-0zM7.234 12.625c0.211-0.31-0.562-1.4 0.111-0.391 0.29 0.231 0.84 0.387 0.354 0.484 0.762 0.674-0.187 0.182-0.465-0.092zM11.296 15.203c0.055-1.037 0.31-0.619 0.002 0.147zM6.848 12.985c0.519-0.11 2.147 0.911 0.65 0.292-0.165-0.185-0.52-0.1-0.65-0.293zM11.586 16.261c0.162-0.577 0.012 0.381 0 0zM9.484 14.913c-0.082-1.012 0.184 0.167 0 0zM6.715 13.444c-0.871-1.203 2.533 1.216 0.559 0.305-0.206-0.054-0.455-0.075-0.559-0.305zM11.521 16.702c0.067-0.275 0.009 0.322 0 0zM11.771 16.95c0.060-0.641 0.124 0.437-0 0zM10.334 16.1c-0.587-0.352-0.154-2.479 0.046-1.025 0.571-0.185-0.031 0.75 0.394 0.742-0.066 0.591-0.257 0.804-0.437 0.282zM6.448 13.841c-1.357-1.207 1.706 0.632 0.221 0.225zM7.319 14.674c-0.41-0.771 0.5 0.322 0 0zM6.881 14.533c0.271-0.269 0.144 0.265 0 0zM6.169 14.552c-0.467-0.462-0.805-0.891 0.021-0.287 0.319 0.012-0.707-0.972 0.075-0.312 0.825 0.15 0.409 1.352-0.096 0.6zM7.524 15.601c0.27-0.569 0.457 0.792 0 0zM6.961 15.408c0.050-0.754 0.287 0.516 0 0zM8.215 16.271c-0.262-0.448-0.417-0.987-0.417-1.562 0-0.001 0-0.002 0-0.003v0c0.095 0.472 1.005 2.033 0.446 0.647-0.617-1.162 0.737 0.377 0.877 0.667 0.062 0.287-0.381-0.079-0.080 0.597-0.55-0.771-0.325 0.425-0.826-0.347zM12.271 18.977c-0.44-0.987 0.312-0.54 0.097 0.162zM9.919 18.222c-0.194-0.347 0.404 0.325 0 0zM12.658 20.128c0.168-0.63 0.198 0.53 0 0zM8.78 18.026c0.274-0.075 0.135 0.467 0 0zM13.653 21.39c-0.465-0.9 0.587 0.255 0 0zM14.056 21.931c-0.012-0.585 0.134 0.45 0 0zM18.687 25.45c0.231-0.014 0.008 0.175 0 0zM14.64 22.879c-0.37-0.387-0.466-1.112-0.066-0.481 0.205 0.082 0.656 1.183 0.066 0.481zM15.883 26.388c0.966-0.577 0.647 1.352 1.638 0.162 0.977-0.712-0.843 0.883 0.362 0.129 0.87-0.584 2.157 0.275 2.969 0.556 0.585-0.029 1.153 0.506 1.753 0.181 1.153-0.312-2.257-0.462-1.362-1.012-0.138 0.031-0.297 0.049-0.46 0.049-0.805 0-1.509-0.435-1.89-1.082l-0.006-0.010c-1.299-0.215-2.402-0.92-3.136-1.914l-0.009-0.013c-0.24-0.394 0.35 0.055-0.207-0.587-0.606-0.61-1.123-1.311-1.527-2.079l-0.023-0.047c-0.571-0.305-0.637-1.203-0.696-0.030 0.005-0.741-0.691-1.24-0.86-1.032-0.002-0.714 0.744-0.356 0.22-0.884-0.112-0.74-0.482-1.512-0.594-2.346-0.172-0.402-0.025-1.263-0.591-0.352-0.206 0.962-0.069-1.183 0.252-0.475 0.421-0.725-0.15-0.637-0.175-0.537 0.275-0.61 0.175-1.475-0.071-1.145 0.146-0.646 0.231-2.377-0.219-2.069 0.272-0.675 0.517-3.090-0.667-2.169-0.62 0.025-1.202 0.159-1.736 0.382l0.033-0.012c1.232 0.679-0.125 0.245-0.625 0.137-0.065 0.627-0.562 0.356-1.182 0.362 0.991 0.122-0.482 1.012-1.051 0.667-0.737 0.352 0.637 1.233 0.015 1.506 0.075 0.41-1.131-0.15-1.037 0.8-0.716-0.301-0.097 1.125 0.261 0.642 1.218 0.33 0.857 1.082 0.887 1.796-0.197 0.416-0.98-0.978-0.175-0.914-0.634-1.033-0.701-0.375-1.23 0.106-0.125 0.035 1.348 0.684 0.425 1.003 0.812 0.125 0.835 0.837 1 1.287 0.487 0.509 0.387-0.562 0.973 0.050-0.37-0.545-1.958-1.535-0.68-1.217-0.006-0.55-0.231-0.991 0.161-0.98 0.387-0.702-0.406 1.733 0.469 0.84 0.241-0.106 0.3-0.704 0.737 0.056 0.631 0.622 0.227 1.072-0.664 0.504 0.159 0.541 1.192 0.734 0.998 1.581 0.206 0.744 0.494 0.47 0.745 0.427 0.197 0.722 0.309 0.191 0.319-0.154 0.9 0.194 0.69 0.725 0.972 1.1 0.621 0.28-0.89-1.902 0.177-0.657 1.122 1.012 0.421 1.437-0.587 1.275 0.637-0.051 0.844 0.862 1.641 0.83 0.727 0.346 1.218 1.675-0.034 1.121-0.435-0.391-1.974-0.875-0.716-0.13 1.282 0.525 2.335 1.039 3.35 1.611l-0.15-0.077c0.8 0.572 1.147 1.227 1.45 1.357-0.672 0.321-2.028-0.257-1.021-0.435-0.629-0.114-1.335-0.431-0.734 0.35 0.512 0.429 1.812 0.382 2.046 0.431-0.199 0.435-0.537 0.47 0.008 0.504-0.607 0.325 0.195 0.375 0.251 0.56zM12.289 24.179c1.033 0.132-1.231-0.704-0.226-0.075zM15.045 26.050c0.897-0.356-0.875-0.175 0 0zM9.746 22.754c0.575-0.062-0.925-0.389 0 0zM12.877 24.744c0.075-0.319-0.66-0.096 0 0zM17.456 27.709c-0.012-0.246-0.229 0.094 0 0zM13.25 25.129c-0.142-0.162-0.068 0.035 0 0zM6.493 20.836c-0.096-0.371-0.842-0.667 0 0zM9.067 22.501c0.775-0.046-1.060-0.341 0 0zM11.239 24.068c-0.080-0.239-0.42-0.010 0 0zM17.025 27.637c0.035-0.454-0.441 0.337 0 0zM8.94 22.657c-0.052-0.25-0.332 0.023 0 0zM14.743 26.356c1.35 0.012-1.218-0.184 0 0zM12.277 24.931c1.425 0.404-1.197-0.9-0.351-0.147l0.187 0.085 0.162 0.062zM13.507 25.91c0.241-0.412-1.018-0.237 0 0zM9.458 23.438c0.582 0.447 2.349 0.057 0.892-0.266-0.662-0.354-2.158-0.595-1.14 0.212zM12.687 25.653c0.537-0.202-0.87-0.204 0 0zM11.48 24.912c0.375-0.262-0.776-0.2 0 0zM10.043 24.075c-0.050-0.209-0.77-0.231 0 0zM14.943 27.892c0.496 0.312 2.899 0.687 1.393 0.129-0.25 0.052-2.787-0.717-1.395-0.129zM11.856 25.965c-0.017-0.207-0.22 0.094 0 0zM11.239 25.657c0.609-0.394-0.787-0.005 0 0zM13.947 27.548c0.239-0.352-0.762-0.134 0 0zM12.538 26.761c0.39-0.375-0.605-0.235 0 0zM11.714 26.417c-0.067-0.331-0.3 0.185 0 0zM11.056 26.177c0.269-0.12-0.387-0.15 0 0zM6.115 21.807c0.041-0.182 0.221 0.396 0 0zM9.606 25.64c1.212 0.449-0.005-0.852-0.562-0.777-0.245-0.426-0.938-0.696-0.45-0.925-0.88 0.305-0.921-1.162-1.337-0.953-0.93-0.294-0.362-1.337-1.47-1.974-0.101-0.675-1.102-1.26-1.422-2.277-0.141-0.52-1.131-2.016-0.522-0.625 0.648 1.386 1.378 2.579 2.221 3.68l-0.034-0.047c0.545 1.179 1.346 2.158 2.336 2.898l0.020 0.014c0.362 0.348 0.71 0.879 1.221 0.987zM11.985 27.322c1.11 0.571 2.398 1.016 3.753 1.268l0.088 0.014c1.303 0.299 2.799 0.47 4.336 0.47 0.798 0 1.586-0.046 2.36-0.136l-0.094 0.009c-0.987-0.446-2.009 0.175-2.993-0.319-0.35 0.040-0.756 0.062-1.167 0.062-0.879 0-1.734-0.103-2.553-0.298l0.075 0.015c-1.631-0.594-2.987-1.206-4.292-1.902l0.179 0.087c-1.596-0.582 0.825 0.747 1.256 0.856 0.997 0.566-1.096-0.291-1.392-0.526-0.835-0.469-0.942-0.371-0.082 0.105 0.174 0.1 0.345 0.207 0.525 0.294zM9.967 26.447c-1.228-0.845-2.28-1.828-3.171-2.945l-0.023-0.029c-1.676-2.057-3.041-4.451-3.971-7.051l-0.053-0.168c-0.557-1.693-0.75-3.509-1.467-5.136-0.145-0.266-0.23-0.583-0.23-0.92 0-0.972 0.711-1.779 1.641-1.928l0.011-0.001c0.575-0.109 1.59-0.652 0.366-0.264-1.097 0.805-1.203-0.731-0.079-0.827 0.489-0.005 0.884-0.402 0.884-0.892 0-0.147-0.036-0.286-0.099-0.409l0.002 0.005c-0.825-0.537 1.999-1.128 0.579-1.929-1.478-1.598 2.071-1.904 1.196-0.092-0.209 1.393 2.479-0.256 1.856 1.353 0.634 0.774 2.374 0.175 2.331 1.261 0.925 0.062 1.241 0.84 2.108 0.9 0.9 0.406 2.527 0.725 2.832 1.737-0.891 0.707-2.954-1.456-3.053 0.497 0.023 3.075 0.48 6.034 1.312 8.832l-0.057-0.225c0.67 1.664 1.62 3.085 2.804 4.271l-0-0c1.079 1.202 2.376 2.182 3.834 2.884l0.074 0.032c1.16 0.548 2.508 0.98 3.918 1.228l0.097 0.014c0.56-0.429 1.55-2.021 2.422-1.35 0.041 0.755-1.735 1.578-0.084 1.495 0.97-0.292 1.642 0.75 2.441-0.19 0.735 0.871 3.057-0.557 2.533 1.225-0.707 0.455-1.739 0.18-2.448 0.807-1.168-0.584-2.099 0.522-3.393 0.382-1.271 0.231-2.734 0.363-4.228 0.363-0.044 0-0.089-0-0.133-0l0.007 0c-2.548-0.045-4.986-0.444-7.29-1.149l0.187 0.049c-1.394-0.471-2.603-1.091-3.7-1.86l0.046 0.031z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">Flask</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        Git
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 90%"></div>
-                    </div>
-                </div>
 
-                <!-- HTML -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="-1 0 20 20" version="1.1"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            fill="#000000">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title>html [#124]</title>
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Dribbble-Light-Preview" transform="translate(-61.000000, -7639.000000)"
-                                        fill="currentColor">
-                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg width="32px" height="32px" viewBox="0 0 1024 1024"
+                                    xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <circle cx="512" cy="512" r="512" style="fill:#13aa52"></circle>
+                                        <path
+                                            d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z"
+                                            style="fill:#fff"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">MongoDB</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg width="32px" height="32px" viewBox="-4 0 264 264"
+                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"
+                                    fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M255.008 158.086c-1.535-4.649-5.556-7.887-10.756-8.664-2.452-.366-5.26-.21-8.583.475-5.792 1.195-10.089 1.65-13.225 1.738 11.837-19.985 21.462-42.775 27.003-64.228 8.96-34.689 4.172-50.492-1.423-57.64C233.217 10.847 211.614.683 185.552.372c-13.903-.17-26.108 2.575-32.475 4.549-5.928-1.046-12.302-1.63-18.99-1.738-12.537-.2-23.614 2.533-33.079 8.15-5.24-1.772-13.65-4.27-23.362-5.864-22.842-3.75-41.252-.828-54.718 8.685C6.622 25.672-.937 45.684.461 73.634c.444 8.874 5.408 35.874 13.224 61.48 4.492 14.718 9.282 26.94 14.237 36.33 7.027 13.315 14.546 21.156 22.987 23.972 4.731 1.576 13.327 2.68 22.368-4.85 1.146 1.388 2.675 2.767 4.704 4.048 2.577 1.625 5.728 2.953 8.875 3.74 11.341 2.835 21.964 2.126 31.027-1.848.056 1.612.099 3.152.135 4.482.06 2.157.12 4.272.199 6.25.537 13.374 1.447 23.773 4.143 31.049.148.4.347 1.01.557 1.657 1.345 4.118 3.594 11.012 9.316 16.411 5.925 5.593 13.092 7.308 19.656 7.308 3.292 0 6.433-.432 9.188-1.022 9.82-2.105 20.973-5.311 29.041-16.799 7.628-10.86 11.336-27.217 12.007-52.99.087-.729.167-1.425.244-2.088l.16-1.362 1.797.158.463.031c10.002.456 22.232-1.665 29.743-5.154 5.935-2.754 24.954-12.795 20.476-26.351">
+                                        </path>
+                                        <path
+                                            d="M237.906 160.722c-29.74 6.135-31.785-3.934-31.785-3.934 31.4-46.593 44.527-105.736 33.2-120.211-30.904-39.485-84.399-20.811-85.292-20.327l-.287.052c-5.876-1.22-12.451-1.946-19.842-2.067-13.456-.22-23.664 3.528-31.41 9.402 0 0-95.43-39.314-90.991 49.444.944 18.882 27.064 142.873 58.218 105.422 11.387-13.695 22.39-25.274 22.39-25.274 5.464 3.63 12.006 5.482 18.864 4.817l.533-.452c-.166 1.7-.09 3.363.213 5.332-8.026 8.967-5.667 10.541-21.711 13.844-16.235 3.346-6.698 9.302-.471 10.86 7.549 1.887 25.013 4.561 36.813-11.958l-.47 1.885c3.144 2.519 5.352 16.383 4.982 28.952-.37 12.568-.617 21.197 1.86 27.937 2.479 6.74 4.948 21.905 26.04 17.386 17.623-3.777 26.756-13.564 28.027-29.89.901-11.606 2.942-9.89 3.07-20.267l1.637-4.912c1.887-15.733.3-20.809 11.157-18.448l2.64.232c7.99.363 18.45-1.286 24.589-4.139 13.218-6.134 21.058-16.377 8.024-13.686h.002"
+                                            fill="#336791"></path>
+                                        <path
+                                            d="M108.076 81.525c-2.68-.373-5.107-.028-6.335.902-.69.523-.904 1.129-.962 1.546-.154 1.105.62 2.327 1.096 2.957 1.346 1.784 3.312 3.01 5.258 3.28.282.04.563.058.842.058 3.245 0 6.196-2.527 6.456-4.392.325-2.336-3.066-3.893-6.355-4.35M196.86 81.599c-.256-1.831-3.514-2.353-6.606-1.923-3.088.43-6.082 1.824-5.832 3.659.2 1.427 2.777 3.863 5.827 3.863.258 0 .518-.017.78-.054 2.036-.282 3.53-1.575 4.24-2.32 1.08-1.136 1.706-2.402 1.591-3.225"
+                                            fill="#FFF"></path>
+                                        <path
+                                            d="M247.802 160.025c-1.134-3.429-4.784-4.532-10.848-3.28-18.005 3.716-24.453 1.142-26.57-.417 13.995-21.32 25.508-47.092 31.719-71.137 2.942-11.39 4.567-21.968 4.7-30.59.147-9.463-1.465-16.417-4.789-20.665-13.402-17.125-33.072-26.311-56.882-26.563-16.369-.184-30.199 4.005-32.88 5.183-5.646-1.404-11.801-2.266-18.502-2.376-12.288-.199-22.91 2.743-31.704 8.74-3.82-1.422-13.692-4.811-25.765-6.756-20.872-3.36-37.458-.814-49.294 7.571-14.123 10.006-20.643 27.892-19.38 53.16.425 8.501 5.269 34.653 12.913 59.698 10.062 32.964 21 51.625 32.508 55.464 1.347.449 2.9.763 4.613.763 4.198 0 9.345-1.892 14.7-8.33a529.832 529.832 0 0 1 20.261-22.926c4.524 2.428 9.494 3.784 14.577 3.92.01.133.023.266.035.398a117.66 117.66 0 0 0-2.57 3.175c-3.522 4.471-4.255 5.402-15.592 7.736-3.225.666-11.79 2.431-11.916 8.435-.136 6.56 10.125 9.315 11.294 9.607 4.074 1.02 7.999 1.523 11.742 1.523 9.103 0 17.114-2.992 23.516-8.781-.197 23.386.778 46.43 3.586 53.451 2.3 5.748 7.918 19.795 25.664 19.794 2.604 0 5.47-.303 8.623-.979 18.521-3.97 26.564-12.156 29.675-30.203 1.665-9.645 4.522-32.676 5.866-45.03 2.836.885 6.487 1.29 10.434 1.289 8.232 0 17.731-1.749 23.688-4.514 6.692-3.108 18.768-10.734 16.578-17.36zm-44.106-83.48c-.061 3.647-.563 6.958-1.095 10.414-.573 3.717-1.165 7.56-1.314 12.225-.147 4.54.42 9.26.968 13.825 1.108 9.22 2.245 18.712-2.156 28.078a36.508 36.508 0 0 1-1.95-4.009c-.547-1.326-1.735-3.456-3.38-6.404-6.399-11.476-21.384-38.35-13.713-49.316 2.285-3.264 8.084-6.62 22.64-4.813zm-17.644-61.787c21.334.471 38.21 8.452 50.158 23.72 9.164 11.711-.927 64.998-30.14 110.969a171.33 171.33 0 0 0-.886-1.117l-.37-.462c7.549-12.467 6.073-24.802 4.759-35.738-.54-4.488-1.05-8.727-.92-12.709.134-4.22.692-7.84 1.232-11.34.663-4.313 1.338-8.776 1.152-14.037.139-.552.195-1.204.122-1.978-.475-5.045-6.235-20.144-17.975-33.81-6.422-7.475-15.787-15.84-28.574-21.482 5.5-1.14 13.021-2.203 21.442-2.016zM66.674 175.778c-5.9 7.094-9.974 5.734-11.314 5.288-8.73-2.912-18.86-21.364-27.791-50.624-7.728-25.318-12.244-50.777-12.602-57.916-1.128-22.578 4.345-38.313 16.268-46.769 19.404-13.76 51.306-5.524 64.125-1.347-.184.182-.376.352-.558.537-21.036 21.244-20.537 57.54-20.485 59.759-.002.856.07 2.068.168 3.735.362 6.105 1.036 17.467-.764 30.334-1.672 11.957 2.014 23.66 10.111 32.109a36.275 36.275 0 0 0 2.617 2.468c-3.604 3.86-11.437 12.396-19.775 22.426zm22.479-29.993c-6.526-6.81-9.49-16.282-8.133-25.99 1.9-13.592 1.199-25.43.822-31.79-.053-.89-.1-1.67-.127-2.285 3.073-2.725 17.314-10.355 27.47-8.028 4.634 1.061 7.458 4.217 8.632 9.645 6.076 28.103.804 39.816-3.432 49.229-.873 1.939-1.698 3.772-2.402 5.668l-.546 1.466c-1.382 3.706-2.668 7.152-3.465 10.424-6.938-.02-13.687-2.984-18.819-8.34zm1.065 37.9c-2.026-.506-3.848-1.385-4.917-2.114.893-.42 2.482-.992 5.238-1.56 13.337-2.745 15.397-4.683 19.895-10.394 1.031-1.31 2.2-2.794 3.819-4.602l.002-.002c2.411-2.7 3.514-2.242 5.514-1.412 1.621.67 3.2 2.702 3.84 4.938.303 1.056.643 3.06-.47 4.62-9.396 13.156-23.088 12.987-32.921 10.526zm69.799 64.952c-16.316 3.496-22.093-4.829-25.9-14.346-2.457-6.144-3.665-33.85-2.808-64.447.011-.407-.047-.8-.159-1.17a15.444 15.444 0 0 0-.456-2.162c-1.274-4.452-4.379-8.176-8.104-9.72-1.48-.613-4.196-1.738-7.46-.903.696-2.868 1.903-6.107 3.212-9.614l.549-1.475c.618-1.663 1.394-3.386 2.214-5.21 4.433-9.848 10.504-23.337 3.915-53.81-2.468-11.414-10.71-16.988-23.204-15.693-7.49.775-14.343 3.797-17.761 5.53-.735.372-1.407.732-2.035 1.082.954-11.5 4.558-32.992 18.04-46.59 8.489-8.56 19.794-12.788 33.568-12.56 27.14.444 44.544 14.372 54.366 25.979 8.464 10.001 13.047 20.076 14.876 25.51-13.755-1.399-23.11 1.316-27.852 8.096-10.317 14.748 5.644 43.372 13.315 57.129 1.407 2.521 2.621 4.7 3.003 5.626 2.498 6.054 5.732 10.096 8.093 13.046.724.904 1.426 1.781 1.96 2.547-4.166 1.201-11.649 3.976-10.967 17.847-.55 6.96-4.461 39.546-6.448 51.059-2.623 15.21-8.22 20.875-23.957 24.25zm68.104-77.936c-4.26 1.977-11.389 3.46-18.161 3.779-7.48.35-11.288-.838-12.184-1.569-.42-8.644 2.797-9.547 6.202-10.503.535-.15 1.057-.297 1.561-.473.313.255.656.508 1.032.756 6.012 3.968 16.735 4.396 31.874 1.271l.166-.033c-2.042 1.909-5.536 4.471-10.49 6.772z"
+                                            fill="#FFF"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">PostgreSQL</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg width="32px" height="32px" viewBox="0 -99 512 512" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <defs>
+                                            <linearGradient x1="68.1884411%" y1="17.4868311%" x2="27.8226935%"
+                                                y2="89.7551419%" id="linearGradient-1">
+                                                <stop stop-color="#41873F" offset="0%"> </stop>
+                                                <stop stop-color="#418B3D" offset="32.88%"> </stop>
+                                                <stop stop-color="#419637" offset="63.52%"> </stop>
+                                                <stop stop-color="#3FA92D" offset="93.19%"> </stop>
+                                                <stop stop-color="#3FAE2A" offset="100%"> </stop>
+                                            </linearGradient>
+                                            <path id="path-2"
+                                                d="M57.903386,1.84920993 C56.0541761,0.809029345 53.8582393,0.809029345 52.0090293,1.84920993 L3.351693,29.9340858 C1.50248307,30.9742664 0.462302483,32.9390519 0.462302483,35.0194131 L0.462302483,91.3047404 C0.462302483,93.3851016 1.61805869,95.3498871 3.351693,96.3900677 L52.0090293,124.474944 C53.8582393,125.515124 56.0541761,125.515124 57.903386,124.474944 L106.560722,96.3900677 C108.409932,95.3498871 109.450113,93.3851016 109.450113,91.3047404 L109.450113,35.0194131 C109.450113,32.9390519 108.294357,30.9742664 106.560722,29.9340858 L57.903386,1.84920993 L57.903386,1.84920993 Z">
+                                            </path>
+                                            <linearGradient x1="43.2765472%" y1="55.168777%" x2="159.245277%"
+                                                y2="-18.3061379%" id="linearGradient-4">
+                                                <stop stop-color="#41873F" offset="13.76%"> </stop>
+                                                <stop stop-color="#54A044" offset="40.32%"> </stop>
+                                                <stop stop-color="#66B848" offset="71.36%"> </stop>
+                                                <stop stop-color="#6CC04A" offset="90.81%"> </stop>
+                                            </linearGradient>
+                                            <linearGradient x1="-4413.77%" y1="13.43%" x2="5327.93%" y2="13.43%"
+                                                id="linearGradient-5">
+                                                <stop stop-color="#6CC04A" offset="9.191646%"> </stop>
+                                                <stop stop-color="#66B848" offset="28.64%"> </stop>
+                                                <stop stop-color="#54A044" offset="59.68%"> </stop>
+                                                <stop stop-color="#41873F" offset="86.24%"> </stop>
+                                            </linearGradient>
+                                            <linearGradient x1="-4.38880435%" y1="49.9972065%" x2="101.499239%"
+                                                y2="49.9972065%" id="linearGradient-6">
+                                                <stop stop-color="#6CC04A" offset="9.191646%"> </stop>
+                                                <stop stop-color="#66B848" offset="28.64%"> </stop>
+                                                <stop stop-color="#54A044" offset="59.68%"> </stop>
+                                                <stop stop-color="#41873F" offset="86.24%"> </stop>
+                                            </linearGradient>
+                                            <linearGradient x1="-9713.77%" y1="36.21%" x2="27.93%" y2="36.21%"
+                                                id="linearGradient-7">
+                                                <stop stop-color="#6CC04A" offset="9.191646%"> </stop>
+                                                <stop stop-color="#66B848" offset="28.64%"> </stop>
+                                                <stop stop-color="#54A044" offset="59.68%"> </stop>
+                                                <stop stop-color="#41873F" offset="86.24%"> </stop>
+                                            </linearGradient>
+                                            <linearGradient x1="-103.860714%" y1="50.2754209%" x2="100.796849%"
+                                                y2="50.2754209%" id="linearGradient-8">
+                                                <stop stop-color="#6CC04A" offset="9.191646%"> </stop>
+                                                <stop stop-color="#66B848" offset="28.64%"> </stop>
+                                                <stop stop-color="#54A044" offset="59.68%"> </stop>
+                                                <stop stop-color="#41873F" offset="86.24%"> </stop>
+                                            </linearGradient>
+                                            <linearGradient x1="130.613025%" y1="-211.06936%" x2="4.39327731%"
+                                                y2="201.605387%" id="linearGradient-9">
+                                                <stop stop-color="#41873F" offset="0%"> </stop>
+                                                <stop stop-color="#418B3D" offset="32.88%"> </stop>
+                                                <stop stop-color="#419637" offset="63.52%"> </stop>
+                                                <stop stop-color="#3FA92D" offset="93.19%"> </stop>
+                                                <stop stop-color="#3FAE2A" offset="100%"> </stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <g fill="none">
                                             <path
-                                                d="M19.4350881,7485 L19.4279481,7485 L10.8119794,7485 L11.0180201,7487 L19.2300674,7487 C19.109707,7488.752 18.7455658,7492.464 18.6119454,7494.153 L13.99949,7495.451 L13.99949,7495.455 L13.98929,7495.46 L9.37377458,7493.836 L9.05757353,7490 L11.3199411,7490 L11.4800816,7492.063 L13.99337,7493 L13.99949,7493 L16.5086984,7492.1 L16.7667592,7489 L8.95659319,7489 C8.91885306,7488.599 8.43333144,7483.392 8.34867116,7483 L19.6370488,7483 C19.5738086,7483.66 19.5095484,7484.338 19.4350881,7485 L19.4350881,7485 Z M5,7479 L6.63812546,7497.148 L13.98929,7499 L21.3598345,7497.111 L23,7479 L5,7479 Z"
-                                                id="html-[#124]"></path>
+                                                d="M253.110609,313.094357 C251.376975,313.094357 249.758916,312.632054 248.256433,311.823025 L232.884876,302.692551 C230.573363,301.421219 231.72912,300.958916 232.422573,300.727765 C235.543115,299.687585 236.120993,299.456433 239.357111,297.607223 C239.703837,297.376072 240.16614,297.491648 240.512867,297.722799 L252.30158,304.772912 C252.763883,305.004063 253.341761,305.004063 253.688488,304.772912 L299.80316,278.074944 C300.265463,277.843792 300.496614,277.38149 300.496614,276.803612 L300.496614,223.523251 C300.496614,222.945372 300.265463,222.48307 299.80316,222.251919 L253.688488,195.669526 C253.226185,195.438375 252.648307,195.438375 252.30158,195.669526 L206.186907,222.251919 C205.724605,222.48307 205.493454,223.060948 205.493454,223.523251 L205.493454,276.803612 C205.493454,277.265914 205.724605,277.843792 206.186907,278.074944 L218.78465,285.356208 C225.603612,288.823476 229.87991,284.77833 229.87991,280.733183 L229.87991,228.146275 C229.87991,227.452822 230.457788,226.759368 231.266817,226.759368 L237.161174,226.759368 C237.854628,226.759368 238.548081,227.337246 238.548081,228.146275 L238.548081,280.733183 C238.548081,289.863657 233.57833,295.180135 224.910158,295.180135 C222.251919,295.180135 220.171558,295.180135 214.277201,292.290745 L202.141761,285.356208 C199.136795,283.622573 197.287585,280.386456 197.287585,276.919187 L197.287585,223.638826 C197.287585,220.171558 199.136795,216.93544 202.141761,215.201806 L248.256433,188.503837 C251.145824,186.885779 255.075395,186.885779 257.964786,188.503837 L304.079458,215.201806 C307.084424,216.93544 308.933634,220.171558 308.933634,223.638826 L308.933634,276.919187 C308.933634,280.386456 307.084424,283.622573 304.079458,285.356208 L257.964786,312.054176 C256.462302,312.74763 254.728668,313.094357 253.110609,313.094357 Z M267.326411,276.456885 C247.100677,276.456885 242.939955,267.210835 242.939955,259.351693 C242.939955,258.658239 243.517833,257.964786 244.326862,257.964786 L250.336795,257.964786 C251.030248,257.964786 251.608126,258.427088 251.608126,259.120542 C252.532731,265.24605 255.190971,268.251016 267.441986,268.251016 C277.150339,268.251016 281.311061,266.055079 281.311061,260.854176 C281.311061,257.84921 280.155305,255.653273 265.014898,254.15079 C252.417156,252.879458 244.558014,250.105643 244.558014,240.050564 C244.558014,230.688939 252.417156,225.141309 265.592777,225.141309 C280.386456,225.141309 287.66772,230.226637 288.592325,241.321896 C288.592325,241.668623 288.476749,242.01535 288.245598,242.362077 C288.014447,242.593228 287.66772,242.824379 287.320993,242.824379 L281.311061,242.824379 C280.733183,242.824379 280.155305,242.362077 280.039729,241.784199 C278.652822,235.42754 275.069977,233.347178 265.592777,233.347178 C254.959819,233.347178 253.688488,237.045598 253.688488,239.819413 C253.688488,243.171106 255.190971,244.211287 269.522348,246.060497 C283.738149,247.909707 290.441535,250.567946 290.441535,260.507449 C290.325959,270.678104 282.004515,276.456885 267.326411,276.456885 Z"
+                                                fill="#539E43"> </path>
+                                            <path
+                                                d="M110.027991,104.711512 C110.027991,102.631151 108.872235,100.666366 107.023025,99.6261851 L58.0189616,71.4257336 C57.2099323,70.9634312 56.2853273,70.7322799 55.3607223,70.6167043 L54.8984199,70.6167043 C53.9738149,70.6167043 53.0492099,70.9634312 52.2401806,71.4257336 L3.23611738,99.6261851 C1.38690745,100.666366 0.231151242,102.631151 0.231151242,104.711512 L0.346726862,180.52912 C0.346726862,181.5693 0.924604966,182.609481 1.84920993,183.071783 C2.7738149,183.649661 3.92957111,183.649661 4.73860045,183.071783 L33.8636569,166.428894 C35.7128668,165.388713 36.868623,163.423928 36.868623,161.343567 L36.868623,125.861851 C36.868623,123.78149 38.0243792,121.816704 39.8735892,120.776524 L52.2401806,113.610835 C53.1647856,113.032957 54.2049661,112.801806 55.2451467,112.801806 C56.2853273,112.801806 57.3255079,113.032957 58.1345372,113.610835 L70.5011287,120.776524 C72.3503386,121.816704 73.5060948,123.78149 73.5060948,125.861851 L73.5060948,161.343567 C73.5060948,163.423928 74.661851,165.388713 76.5110609,166.428894 L105.636117,183.071783 C106.560722,183.649661 107.716479,183.649661 108.641084,183.071783 C109.565688,182.609481 110.143567,181.5693 110.143567,180.52912 L110.027991,104.711512 L110.027991,104.711512 Z"
+                                                fill="#333333"> </path>
+                                            <path
+                                                d="M345.571106,0.346726862 C344.646501,-0.115575621 343.490745,-0.115575621 342.681716,0.346726862 C341.757111,0.924604966 341.179233,1.84920993 341.179233,2.88939052 L341.179233,78.013544 C341.179233,78.7069977 340.832506,79.4004515 340.139052,79.862754 C339.445598,80.2094808 338.752144,80.2094808 338.058691,79.862754 L325.807675,72.8126411 C323.958465,71.7724605 321.762528,71.7724605 319.913318,72.8126411 L270.909255,101.128668 C269.060045,102.168849 267.904289,104.133634 267.904289,106.213995 L267.904289,162.730474 C267.904289,164.810835 269.060045,166.775621 270.909255,167.815801 L319.913318,196.131828 C321.762528,197.172009 323.958465,197.172009 325.807675,196.131828 L374.811738,167.815801 C376.660948,166.775621 377.816704,164.810835 377.816704,162.730474 L377.816704,21.8437923 C377.816704,19.6478555 376.660948,17.68307 374.811738,16.6428894 L345.571106,0.346726862 L345.571106,0.346726862 Z M341.063657,144.122799 C341.063657,144.700677 340.832506,145.16298 340.370203,145.394131 L323.611738,155.102483 C323.149436,155.333634 322.571558,155.333634 322.109255,155.102483 L305.35079,145.394131 C304.888488,145.16298 304.657336,144.585102 304.657336,144.122799 L304.657336,124.706095 C304.657336,124.128217 304.888488,123.665914 305.35079,123.434763 L322.109255,113.726411 C322.571558,113.49526 323.149436,113.49526 323.611738,113.726411 L340.370203,123.434763 C340.832506,123.665914 341.063657,124.243792 341.063657,124.706095 L341.063657,144.122799 L341.063657,144.122799 Z"
+                                                fill="#333333"> </path>
+                                            <g transform="translate(401.047404, 70.501129)">
+                                                <path
+                                                    d="M107.600903,53.7426637 C109.450113,52.7024831 110.490293,50.7376975 110.490293,48.6573363 L110.490293,34.9038375 C110.490293,32.8234763 109.334537,30.8586907 107.600903,29.8185102 L58.9435666,1.61805869 C57.0943567,0.577878104 54.8984199,0.577878104 53.0492099,1.61805869 L4.04514673,29.9340858 C2.19593679,30.9742664 1.04018059,32.9390519 1.04018059,35.0194131 L1.04018059,91.5358916 C1.04018059,93.6162528 2.19593679,95.5810384 4.04514673,96.621219 L52.7024831,124.359368 C54.551693,125.399549 56.7476298,125.399549 58.4812641,124.359368 L87.9530474,107.94763 C88.8776524,107.485327 89.4555305,106.445147 89.4555305,105.404966 C89.4555305,104.364786 88.8776524,103.324605 87.9530474,102.862302 L38.717833,74.5462754 C37.793228,73.9683973 37.2153499,73.0437923 37.2153499,72.0036117 L37.2153499,54.3205418 C37.2153499,53.2803612 37.793228,52.2401806 38.717833,51.7778781 L54.0893905,42.9941309 C55.0139955,42.4162528 56.1697517,42.4162528 57.0943567,42.9941309 L72.4659142,51.7778781 C73.3905192,52.3557562 73.9683973,53.2803612 73.9683973,54.3205418 L73.9683973,68.1896163 C73.9683973,69.2297968 74.5462754,70.2699774 75.4708804,70.7322799 C76.3954853,71.310158 77.5512415,71.310158 78.4758465,70.7322799 L107.600903,53.7426637 L107.600903,53.7426637 Z"
+                                                    fill="#333333"> </path>
+                                                <path
+                                                    d="M55.2451467,51.0844244 C55.5918736,50.8532731 56.0541761,50.8532731 56.4009029,51.0844244 L65.7625282,56.5164786 C66.1092551,56.7476298 66.3404063,57.0943567 66.3404063,57.5566591 L66.3404063,68.4207675 C66.3404063,68.88307 66.1092551,69.2297968 65.7625282,69.4609481 L56.4009029,74.8930023 C56.0541761,75.1241535 55.5918736,75.1241535 55.2451467,74.8930023 L45.8835214,69.4609481 C45.5367946,69.2297968 45.3056433,68.88307 45.3056433,68.4207675 L45.3056433,57.5566591 C45.3056433,57.0943567 45.5367946,56.7476298 45.8835214,56.5164786 L55.2451467,51.0844244 L55.2451467,51.0844244 Z"
+                                                    fill="#539E43"> </path>
+                                            </g>
+                                            <g transform="translate(134.067720, 70.501129)">
+                                                <mask id="mask-3" fill="white">
+                                                    <use xlink:href="#path-2"> </use>
+                                                </mask>
+                                                <use fill="url(#linearGradient-1)" xlink:href="#path-2"> </use>
+                                                <g mask="url(#mask-3)">
+                                                    <path
+                                                        d="M51.8934537,1.84920993 L3.12054176,29.9340858 C1.27133183,30.9742664 0,32.9390519 0,35.0194131 L0,91.3047404 C0,92.6916479 0.577878104,93.9629797 1.50248307,95.0031603 L56.2853273,1.15575621 C54.8984199,0.924604966 53.2803612,1.04018059 51.8934537,1.84920993 L51.8934537,1.84920993 Z">
+                                                    </path>
+                                                    <path
+                                                        d="M56.6320542,125.052822 C57.0943567,124.937246 57.5566591,124.706095 58.0189616,124.474944 L106.791874,96.3900677 C108.641084,95.3498871 109.79684,93.3851016 109.79684,91.3047404 L109.79684,35.0194131 C109.79684,33.51693 109.103386,32.014447 108.063205,30.9742664 L56.6320542,125.052822 L56.6320542,125.052822 Z">
+                                                    </path>
+                                                    <path
+                                                        d="M106.676298,29.9340858 L57.7878104,1.84920993 C57.3255079,1.61805869 56.7476298,1.38690745 56.2853273,1.27133183 L1.50248307,95.1187359 C1.96478555,95.696614 2.54266366,96.1589165 3.12054176,96.5056433 L52.0090293,124.590519 C53.3959368,125.399549 55.0139955,125.6307 56.5164786,125.168397 L107.94763,31.089842 C107.600903,30.6275395 107.1386,30.2808126 106.676298,29.9340858 L106.676298,29.9340858 Z"
+                                                        fill="url(#linearGradient-4)"> </path>
+                                                </g>
+                                                <g mask="url(#mask-3)">
+                                                    <g transform="translate(0.000000, -9.246050)">
+                                                        <path
+                                                            d="M109.79684,100.55079 L109.79684,44.2654628 C109.79684,42.1851016 108.525508,40.220316 106.676298,39.1801354 L57.7878104,11.0952596 C57.2099323,10.7485327 56.6320542,10.5173815 55.9386005,10.4018059 L109.450113,101.822122 C109.681264,101.475395 109.79684,101.013093 109.79684,100.55079 L109.79684,100.55079 Z"
+                                                            fill="none"> </path>
+                                                        <path
+                                                            d="M3.12054176,39.1801354 C1.27133183,40.220316 0,42.1851016 0,44.2654628 L0,100.55079 C0,102.631151 1.38690745,104.595937 3.12054176,105.636117 L52.0090293,133.720993 C53.1647856,134.414447 54.4361174,134.645598 55.8230248,134.414447 L3.46726862,39.0645598 L3.12054176,39.1801354 L3.12054176,39.1801354 Z"
+                                                            fill="none"> </path>
+                                                        <path fill="url(#linearGradient-5)" fill-rule="evenodd"
+                                                            d="M50.3909707,0.809029345 L49.6975169,1.15575621 L50.6221219,1.15575621 L50.3909707,0.809029345 Z">
+                                                        </path>
+                                                        <path
+                                                            d="M106.791874,105.636117 C108.178781,104.827088 109.218962,103.440181 109.681264,101.937698 L56.0541761,10.4018059 C54.6672686,10.1706546 53.1647856,10.2862302 51.8934537,11.0952596 L3.351693,39.0645598 L55.7074492,134.530023 C56.4009029,134.414447 57.2099323,134.183296 57.903386,133.836569 L106.791874,105.636117 L106.791874,105.636117 Z"
+                                                            fill="url(#linearGradient-6)" fill-rule="evenodd"> </path>
+                                                        <path fill="url(#linearGradient-7)" fill-rule="evenodd"
+                                                            d="M111.299323,104.711512 L110.952596,104.133634 L110.952596,104.942664 L111.299323,104.711512 Z">
+                                                        </path>
+                                                        <path
+                                                            d="M106.791874,105.636117 L58.0189616,133.720993 C57.3255079,134.06772 56.6320542,134.298871 55.8230248,134.414447 L56.7476298,136.148081 L110.83702,104.827088 L110.83702,104.133634 L109.450113,101.822122 C109.218962,103.440181 108.178781,104.827088 106.791874,105.636117 L106.791874,105.636117 Z"
+                                                            fill="url(#linearGradient-8)" fill-rule="evenodd"> </path>
+                                                        <path
+                                                            d="M106.791874,105.636117 L58.0189616,133.720993 C57.3255079,134.06772 56.6320542,134.298871 55.8230248,134.414447 L56.7476298,136.148081 L110.83702,104.827088 L110.83702,104.133634 L109.450113,101.822122 C109.218962,103.440181 108.178781,104.827088 106.791874,105.636117 L106.791874,105.636117 Z"
+                                                            fill="url(#linearGradient-9)" fill-rule="evenodd"> </path>
+                                                    </g>
+                                                </g>
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">90%</span> -->
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">NodeJS</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        Html
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 95%"></div>
-                    </div>
-                </div>
 
-                <!-- Tailwind -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="0 0 15 15"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M7.50006 2.5C6.47409 2.5 5.59203 2.77691 4.89966 3.37037C4.21227 3.95956 3.76259 4.81729 3.51314 5.88638C3.45869 6.1197 3.57742 6.35885 3.79619 6.45654C4.01496 6.55423 4.27228 6.483 4.40967 6.28672C4.7263 5.8344 5.04244 5.56261 5.3462 5.42313C5.64038 5.28805 5.95748 5.26068 6.32069 5.35797C6.68723 5.45615 6.97097 5.74369 7.41643 6.22816L7.43082 6.24382C7.76661 6.60905 8.17623 7.0546 8.73649 7.40028C9.31785 7.75898 10.0413 7.99999 11.0001 7.99999C12.026 7.99999 12.9081 7.72307 13.6005 7.12962C14.2878 6.54043 14.7375 5.6827 14.987 4.61361C15.0414 4.38029 14.9227 4.14114 14.7039 4.04345C14.4852 3.94576 14.2278 4.01698 14.0904 4.21326C13.7738 4.66559 13.4577 4.93737 13.1539 5.07686C12.8597 5.21194 12.5426 5.23931 12.1794 5.14202C11.8129 5.04384 11.5291 4.7563 11.0837 4.27182L11.0693 4.25616C10.7335 3.89093 10.3239 3.44538 9.76362 3.09971C9.18227 2.74101 8.45883 2.5 7.50006 2.5Z"
-                                    fill="none"></path>
-                                <path
-                                    d="M4.00006 6.99999C2.97409 6.99999 2.09203 7.2769 1.39966 7.87036C0.712271 8.45955 0.262592 9.31727 0.0131365 10.3864C-0.0413057 10.6197 0.0774162 10.8588 0.296186 10.9565C0.514956 11.0542 0.772276 10.983 0.909673 10.7867C1.2263 10.3344 1.54244 10.0626 1.8462 9.92312C2.14038 9.78804 2.45747 9.76067 2.82069 9.85796C3.18723 9.95614 3.47097 10.2437 3.91643 10.7282L3.93082 10.7438C4.2666 11.109 4.67624 11.5546 5.23649 11.9003C5.81785 12.259 6.54128 12.5 7.50006 12.5C8.52602 12.5 9.40808 12.2231 10.1005 11.6296C10.7878 11.0404 11.2375 10.1827 11.487 9.1136C11.5414 8.88027 11.4227 8.64113 11.2039 8.54343C10.9852 8.44574 10.7278 8.51697 10.5904 8.71325C10.2738 9.16558 9.95768 9.43736 9.65391 9.57684C9.35974 9.71192 9.04264 9.7393 8.67942 9.64201C8.31289 9.54383 8.02915 9.25628 7.58369 8.77181L7.56929 8.75615C7.23351 8.39092 6.82388 7.94537 6.26362 7.59969C5.68227 7.241 4.95883 6.99999 4.00006 6.99999Z"
-                                    fill="none"></path>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">90%</span> -->
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        Tailwind
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 95%"></div>
-                    </div>
-                </div>
-
-                <!-- javascript -->
-                <div
-                    class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border-2 border-gray-900 dark:border-gray-700 hover:shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex items-center justify-between mb-4">
-                        <svg class="w-8 h-8 text-primary-600 transform transition-transform duration-300 group-hover:scale-150"
-                            fill="currentColor" stroke="currentColor" viewBox="0 0 16 16"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path fill-rule="nonzero" clip-rule="nonzero"
-                                    d="M0 1.75C0 0.783501 0.783502 0 1.75 0H14.25C15.2165 0 16 0.783502 16 1.75V3.75C16 4.16421 15.6642 4.5 15.25 4.5C14.8358 4.5 14.5 4.16421 14.5 3.75V1.75C14.5 1.61193 14.3881 1.5 14.25 1.5H1.75C1.61193 1.5 1.5 1.61193 1.5 1.75V14.25C1.5 14.3881 1.61193 14.5 1.75 14.5H15.25C15.6642 14.5 16 14.8358 16 15.25C16 15.6642 15.6642 16 15.25 16H1.75C0.783501 16 0 15.2165 0 14.25V1.75ZM8.25 5.75C8.66421 5.75 9 6.08579 9 6.5V10.5C9 11.5048 8.72399 12.2584 8.15514 12.7324C7.61223 13.1848 6.95384 13.25 6.5 13.25C6.08579 13.25 5.75 12.9142 5.75 12.5C5.75 12.0858 6.08579 11.75 6.5 11.75C6.84617 11.75 7.06277 11.6902 7.19486 11.5801C7.301 11.4916 7.5 11.2452 7.5 10.5V6.5C7.5 6.08579 7.83578 5.75 8.25 5.75ZM11.2757 6.58011C11.6944 6.08164 12.3507 5.75 13.25 5.75C14.0849 5.75 14.7148 6.03567 15.1394 6.48481C15.4239 6.78583 15.4105 7.26052 15.1095 7.54505C14.8085 7.82958 14.3338 7.81621 14.0493 7.51519C13.9394 7.39898 13.7204 7.25 13.25 7.25C12.7493 7.25 12.5306 7.41836 12.4243 7.54489C12.2934 7.70065 12.25 7.896 12.25 8C12.25 8.104 12.2934 8.29935 12.4243 8.45511C12.5306 8.58164 12.7493 8.75 13.25 8.75C13.3257 8.75 13.3988 8.76121 13.4676 8.78207C14.1307 8.87646 14.6319 9.17251 14.9743 9.58011C15.3684 10.0493 15.5 10.604 15.5 11C15.5 11.396 15.3684 11.9507 14.9743 12.4199C14.5556 12.9184 13.8993 13.25 13 13.25C12.1651 13.25 11.5352 12.9643 11.1106 12.5152C10.8261 12.2142 10.8395 11.7395 11.1405 11.4549C11.4415 11.1704 11.9162 11.1838 12.2007 11.4848C12.3106 11.601 12.5296 11.75 13 11.75C13.5007 11.75 13.7194 11.5816 13.8257 11.4551C13.9566 11.2993 14 11.104 14 11C14 10.896 13.9566 10.7007 13.8257 10.5449C13.7194 10.4184 13.5007 10.25 13 10.25C12.9243 10.25 12.8512 10.2388 12.7824 10.2179C12.1193 10.1235 11.6181 9.82749 11.2757 9.41989C10.8816 8.95065 10.75 8.396 10.75 8C10.75 7.604 10.8816 7.04935 11.2757 6.58011Z"
-                                    fill="currentColor"></path>
-                            </g>
-                        </svg>
-                        <!-- <span class="text-2xl font-bold text-gray-900 dark:text-white">90%</span> -->
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                        javaScript
-                    </h3>
-                    <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div class="skill-bar bg-primary-600 h-full rounded-full" style="width: 60%"></div>
+                    <div class="text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                            <span class="text-4xl">
+                                <svg width="32px" height="32px" viewBox="0 -18 256 256" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    preserveAspectRatio="xMidYMid" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g>
+                                            <path
+                                                d="M245.969687,168.943256 C232.308259,176.064479 161.536048,205.163388 146.468577,213.017633 C131.402107,220.873879 123.031844,220.797876 111.129473,215.107699 C99.2271007,209.417521 23.9127473,178.99557 10.3463234,172.511368 C3.56511141,169.270267 0,166.535181 0,163.9511 L0,138.075292 C0,138.075292 98.0490639,116.729625 113.878559,111.051447 C129.707053,105.372269 135.199225,105.167264 148.669646,110.101418 C162.141067,115.036572 242.686583,129.569026 256,134.445178 C256,134.445178 255.993999,157.5559 255.993999,159.954975 C255.996,162.513055 252.923904,165.319143 245.969687,168.943256"
+                                                fill="#912626"> </path>
+                                            <path
+                                                d="M245.964922,143.220067 C232.303935,150.33806 161.534003,179.438032 146.467017,187.292024 C131.401031,195.149018 123.031039,195.072017 111.12905,189.382023 C99.2260618,183.696028 23.9151336,153.269057 10.3491466,146.788063 C-3.21684053,140.303069 -3.50184026,135.840074 9.82514705,130.622079 C23.1511343,125.402084 98.0490629,96.0171117 113.880047,90.3381172 C129.708033,84.6611226 135.199028,84.4541228 148.669014,89.3901181 C162.140002,94.3241134 232.487935,122.325087 245.799922,127.200082 C259.11491,132.081078 259.625908,136.099073 245.964922,143.220067"
+                                                fill="#C6302B"> </path>
+                                            <path
+                                                d="M245.969687,127.074354 C232.308259,134.195577 161.536048,163.294486 146.468577,171.151732 C131.402107,179.004977 123.031844,178.928975 111.129473,173.238797 C99.2261007,167.551619 23.9127473,137.126668 10.3463234,130.642465 C3.56511141,127.401364 0,124.669279 0,122.085199 L0,96.2063895 C0,96.2063895 98.0490639,74.8617226 113.878559,69.182545 C129.707053,63.5043676 135.199225,63.2983612 148.669646,68.2325154 C162.141067,73.1676697 242.686583,87.6971237 256,92.5742761 C256,92.5742761 255.993999,115.684998 255.993999,118.087073 C255.996,120.644153 252.923904,123.450241 245.969687,127.074354"
+                                                fill="#912626"> </path>
+                                            <path
+                                                d="M245.964922,101.351164 C232.303935,108.471157 161.534003,137.569129 146.467017,145.426122 C131.401031,153.280114 123.031039,153.203114 111.12905,147.51312 C99.2260618,141.827125 23.9151336,111.401154 10.3491466,104.91916 C-3.21684053,98.4361664 -3.50184026,93.9721706 9.82514705,88.7521756 C23.1511343,83.5351806 98.0490629,54.1482087 113.880047,48.4702141 C129.708033,42.7922195 135.199028,42.5862197 148.669014,47.521215 C162.140002,52.4552102 232.487935,80.4541835 245.799922,85.3311789 C259.11491,90.2101742 259.625908,94.2301704 245.964922,101.350163 L245.964922,101.351164"
+                                                fill="#C6302B"> </path>
+                                            <path
+                                                d="M245.969687,83.6525661 C232.308259,90.7737887 161.536048,119.873698 146.468577,127.730944 C131.402107,135.585189 123.031844,135.508187 111.129473,129.818008 C99.2261007,124.130831 23.9127473,93.7048802 10.3463234,87.2226777 C3.56511141,83.9805764 0,81.2474909 0,78.6654102 L0,52.7856015 C0,52.7856015 98.0490639,31.4419345 113.878559,25.7637571 C129.707053,20.0845797 135.199225,19.8795733 148.669646,24.8137275 C162.141067,29.7488817 242.686583,44.2783357 256,49.1554881 C256,49.1554881 255.993999,72.2662103 255.993999,74.6672853 C255.996,77.2223652 252.923904,80.0284528 245.969687,83.6525661"
+                                                fill="#912626"> </path>
+                                            <path
+                                                d="M245.964922,57.929387 C232.303935,65.0493802 161.534003,94.1493524 146.467017,102.004345 C131.401031,109.858338 123.031039,109.781338 111.12905,104.093343 C99.2270617,98.4053484 23.9151336,67.9813773 10.3491466,61.4983836 C-3.21684053,55.0153898 -3.50184026,50.550394 9.82514705,45.331399 C23.1511343,40.113404 98.0490629,10.729432 113.880047,5.04943744 C129.708033,-0.629557148 135.199028,-0.833556953 148.669014,4.10143834 C162.140002,9.03643363 232.487935,37.0354069 245.799922,41.9124022 C259.11491,46.7883976 259.625908,50.8093938 245.964922,57.929387"
+                                                fill="#C6302B"> </path>
+                                            <path
+                                                d="M159.282977,32.7570853 L137.273922,35.0422326 L132.346419,46.8976124 L124.387597,33.667969 L98.973147,31.383814 L117.936992,24.5452403 L112.247442,14.0472558 L130.001736,20.9910078 L146.739969,15.5108217 L142.21631,26.3660155 L159.282977,32.7570853"
+                                                fill="#FFFFFF"> </path>
+                                            <path
+                                                d="M131.03169,90.2747287 L89.9546047,73.2378295 L148.815752,64.2034109 L131.03169,90.2747287"
+                                                fill="#FFFFFF"> </path>
+                                            <path
+                                                d="M74.0816124,39.3466047 C91.4568682,39.3466047 105.541829,44.8069457 105.541829,51.5413333 C105.541829,58.2767132 91.4568682,63.736062 74.0816124,63.736062 C56.7073488,63.736062 42.6213953,58.2767132 42.6213953,51.5413333 C42.6213953,44.8069457 56.7073488,39.3466047 74.0816124,39.3466047"
+                                                fill="#FFFFFF"> </path>
+                                            <path
+                                                d="M185.29476,35.9977674 L220.130605,49.7642171 L185.324527,63.5167752 L185.29476,35.9977674"
+                                                fill="#621B1C"> </path>
+                                            <path
+                                                d="M146.754853,51.2426667 L185.29476,35.9977674 L185.324527,63.5167752 L181.546047,64.9952248 L146.754853,51.2426667"
+                                                fill="#9A2928"> </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p class="text-sm mt-2">Redis</p>
+                        </div>
                     </div>
                 </div>
             </div>
