@@ -171,3 +171,62 @@ if (reviewsContainer) {
 } else {
   console.warn("reviewsContainer element not found - skipping auto-scroll");
 }
+
+// Counter Animation
+function animateCounter(element) {
+  const target = parseFloat(element.getAttribute("data-target"));
+  const suffix = element.getAttribute("data-suffix") || "";
+  const duration = 2000;
+  const steps = 60;
+  const increment = target / steps;
+  const stepDuration = duration / steps;
+  let current = 0;
+
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      element.textContent = target + suffix;
+      clearInterval(timer);
+    } else {
+      if (target > 100) {
+        element.textContent = Math.floor(current) + suffix;
+      } else {
+        element.textContent = current.toFixed(1) + suffix;
+      }
+    }
+  }, stepDuration);
+}
+
+// Trigger animation when stats section is visible
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const counters = entry.target.querySelectorAll(".counter");
+        counters.forEach((counter) => animateCounter(counter));
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+// Observe stats section
+const statsSection = document.querySelector(".stats-section");
+if (statsSection) {
+  observer.observe(statsSection);
+}
+
+// Dark mode toggle (optional)
+function toggleDarkMode() {
+  document.documentElement.classList.toggle("dark");
+  localStorage.setItem(
+    "darkMode",
+    document.documentElement.classList.contains("dark")
+  );
+}
+
+// Load dark mode preference
+if (localStorage.getItem("darkMode") === "true") {
+  document.documentElement.classList.add("dark");
+}

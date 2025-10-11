@@ -42,7 +42,7 @@ export default {
           // 800: "#8a281c",
           // 900: "#5c1810",
 
-          // // Mustard / Amber
+          // Mustard / Amber
           // 50: "#fff9ed",
           // 100: "#fff3d5",
           // 200: "#ffe6a8",
@@ -103,9 +103,9 @@ export default {
         spin: {
           to: { transform: "rotate(360deg)" },
         },
-        'fade-in-up': {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
 
@@ -113,6 +113,14 @@ export default {
         glowLight: "glowLight 4s ease-in-out infinite",
         glowDark: "glowDark 4s ease-in-out infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out both",
+      },
+
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        body: ["Inter", "sans-serif"],
+        display: ["Cormorant Garamond", "serif"],
+        sans: ["Space Grotesk", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
       },
     },
   },
