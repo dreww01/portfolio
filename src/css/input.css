@@ -1,27 +1,37 @@
+/* ==============================
+   Tailwind & Plugin Imports
+============================== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+/* ==============================
+   Google Fonts
+============================== */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap");
-/* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap");
 
-/* custom css animations */
-
+/* ==============================
+   Global Transitions
+============================== */
 * {
   transition-property: background-color, color, border-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
+/* ==============================
+   Animations (Keyframes)
+============================== */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -33,38 +43,12 @@
     opacity: 0;
     transform: translateX(50px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.8s ease-out;
-}
-
-.animate-slide-in {
-  animation: slideIn 0.8s ease-out;
-}
-
-.skill-bar {
-  transition-property: width;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-}
-
-/* Added custom scrollbar styling */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Custom Animations */
 @keyframes glitch-1 {
   0%,
   100% {
@@ -133,9 +117,55 @@
   }
 }
 
-/* Custom Component Classes */
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* ==============================
+   Animation Utility Classes
+============================== */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.8s ease-out;
+}
+
+.animate-ping-slow {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* ==============================
+   Skill Bar Animation
+============================== */
+.skill-bar {
+  transition-property: width;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+/* ==============================
+   Scrollbar Styling
+============================== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ==============================
+   Custom Components
+============================== */
 @layer components {
-  /* Glitch effect */
+  /* Glitch Effect */
   .glitch {
     position: relative;
   }
@@ -163,7 +193,7 @@
     z-index: -2;
   }
 
-  /* Magnetic card effect */
+  /* Magnetic Card */
   .magnetic-card {
     transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -182,7 +212,7 @@
     box-shadow: 8px 8px 16px #0a0a0f, -8px -8px 16px #1a1a2e;
   }
 
-  /* Reveal animation */
+  /* Reveal Animations */
   .reveal {
     animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
   }
@@ -204,7 +234,7 @@
     opacity: 0;
   }
 
-  /* Gradient text */
+  /* Gradient Text */
   .gradient-text-blue {
     background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 50%, #7dd3fc 100%);
     -webkit-background-clip: text;
@@ -212,17 +242,17 @@
     -webkit-text-fill-color: transparent;
   }
 
-  /* Breathing animation */
+  /* Breathing Animation */
   .breathe {
     animation: breathe 4s ease-in-out infinite;
   }
 
-  /* Terminal window */
+  /* Terminal Window */
   .terminal-window {
     background: linear-gradient(180deg, #1e1e1e 0%, #0a0a0a 100%);
   }
 
-  /* Scanline effect */
+  /* Scanline Effect */
   .scanline {
     position: relative;
   }
@@ -238,7 +268,7 @@
     animation: scanline 3s linear infinite;
   }
 
-  /* Holographic effect */
+  /* Holographic Effect */
   .holographic {
     background: linear-gradient(
       135deg,
@@ -252,10 +282,44 @@
     animation: holographic-shift 3s ease infinite;
   }
 
-  /* Diagonal text */
+  /* Diagonal Text */
   .diagonal-text {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
   }
+}
+
+/* ==============================
+   Fonts
+============================== */
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+.font-sans {
+  font-family: "Inter", sans-serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ==============================
+   Project Cards & Effects
+============================== */
+.project-image {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-card {
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
 }
